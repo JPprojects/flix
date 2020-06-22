@@ -38,6 +38,8 @@ namespace AcebookApi.Controllers
         [HttpPost]
         public object Create(User user)
         {
+            var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
+            user.Password = encrpyt;
             var userRepo = new UserRepository(_context);
             return userRepo.Add(user);
         }
