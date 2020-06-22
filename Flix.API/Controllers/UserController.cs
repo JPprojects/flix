@@ -6,13 +6,13 @@ using Acebook.Api.Models;
 using System;
 using Microsoft.AspNetCore.Http;
 
-namespace AcebookApi.Controllers
+namespace Flix.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : Controller
     {
-        private readonly PostContext _context;
+        private readonly  _context;
 
         public UserController(PostContext context)
         {

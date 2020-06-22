@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Repo/UserRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Controllers/UserController.cs">
     <Files>
       <File FileName="Flix.API/appsettings.json" Line="13" Column="1" />
       <File FileName="Flix.API/Repo/EncrytpionRepository.cs" Line="20" Column="10" />
       <File FileName="Flix.API/Repo/UserRepository.cs" Line="11" Column="1" />
+      <File FileName="Flix.API/Controllers/UserController.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,12 +15,12 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repo" expanded="True">
-                <Node name="UserRepository.cs" selected="True" />
-              </Node>
+              <Node name="Repo" expanded="True" />
             </Node>
             <Node name="Flix.Test" expanded="True" />
           </Node>
