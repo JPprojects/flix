@@ -1,9 +1,14 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.Test/AuthTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Repo/UserRepository.cs">
     <Files>
       <File FileName="Flix.Test/EncrytpionTest.cs" Line="1" Column="1" />
-      <File FileName="Flix.Test/AuthTest.cs" Line="10" Column="21" />
+      <File FileName="Flix.Test/AuthTest.cs" Line="26" Column="1" />
+      <File FileName="Flix.API/Controllers/UserController.cs" Line="37" Column="1" />
+      <File FileName="Flix.API/Models/User.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Repo/AuthoRepository.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Repo/EncrytpionRepository.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Repo/UserRepository.cs" Line="23" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,11 +21,12 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repo" expanded="True" />
+              <Node name="Repo" expanded="True">
+                <Node name="UserRepository.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="Flix.Test" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="AuthTest.cs" selected="True" />
             </Node>
           </Node>
         </State>
