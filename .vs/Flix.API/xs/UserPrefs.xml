@@ -1,14 +1,18 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Repo/UserRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Controllers/UserController.cs">
     <Files>
       <File FileName="Flix.Test/EncrytpionTest.cs" Line="1" Column="1" />
       <File FileName="Flix.Test/AuthTest.cs" Line="26" Column="1" />
-      <File FileName="Flix.API/Controllers/UserController.cs" Line="37" Column="1" />
+      <File FileName="Flix.API/Controllers/UserController.cs" Line="42" Column="36" />
       <File FileName="Flix.API/Models/User.cs" Line="1" Column="1" />
-      <File FileName="Flix.API/Repo/AuthoRepository.cs" Line="1" Column="1" />
-      <File FileName="Flix.API/Repo/EncrytpionRepository.cs" Line="1" Column="1" />
-      <File FileName="Flix.API/Repo/UserRepository.cs" Line="23" Column="18" />
+      <File FileName="Flix.API/Repo/AuthoRepository.cs" Line="12" Column="1" />
+      <File FileName="Flix.API/Repo/EncrytpionRepository.cs" Line="20" Column="10" />
+      <File FileName="Flix.API/Repo/UserRepository.cs" Line="31" Column="2" />
+      <File FileName="Flix.API/Startup.cs" Line="42" Column="35" />
+      <File FileName="Flix.API/appsettings.json" Line="8" Column="25" />
+      <File FileName="Flix.API/Program.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Controllers/HomeController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,12 +22,12 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repo" expanded="True">
-                <Node name="UserRepository.cs" selected="True" />
-              </Node>
+              <Node name="Repo" expanded="True" />
             </Node>
             <Node name="Flix.Test" expanded="True">
               <Node name="Dependencies" expanded="True" />

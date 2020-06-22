@@ -19,5 +19,13 @@ namespace Flix.API.Repo
         {
             return _context.Users.ToList();
         }
+
+        public User Add(User user)
+        {
+            _context.Users.Add(user);
+            _context.SaveChanges();
+            return user;
+        }
+
     }
 }

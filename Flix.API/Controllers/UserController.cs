@@ -36,11 +36,12 @@ namespace AcebookApi.Controllers
         }
 
         [HttpPost]
-        public object Create(User post)
+        public object Create(User user)
         {
-            _context.Users.Add(post);
-            _context.SaveChanges();
-            return post;
+            var userRepo = new UserRepository(_context);
+            return userRepo.Add(user);
         }
+      
+      
     }
 }

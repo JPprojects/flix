@@ -1,5 +1,4 @@
-using Acebook.Api.Models;
-using Flix.Api.Models;
+using Flix.API.Repo;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Flix.Api.UnitTest
