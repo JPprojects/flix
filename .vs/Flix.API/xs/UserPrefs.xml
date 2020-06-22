@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.Test/AuthTest.cs">
     <Files>
-      <File FileName="Flix.API/appsettings.json" Line="13" Column="1" />
+      <File FileName="Flix.Test/EncrytpionTest.cs" Line="1" Column="1" />
+      <File FileName="Flix.Test/AuthTest.cs" Line="10" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,9 +16,12 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Repo" expanded="True" />
             </Node>
-            <Node name="Flix.Test" expanded="True" />
+            <Node name="Flix.Test" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="AuthTest.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
