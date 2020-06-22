@@ -8,7 +8,6 @@
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Flix.API.pdb
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Flix.API.Views.dll
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Flix.API.Views.pdb
-/Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.csprojAssemblyReference.cache
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.AssemblyInfoInputs.cache
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.AssemblyInfo.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.csproj.CoreCompileInputs.cache

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flix.API", "Flix.API\Flix.API.csproj", "{C48AC997-85DA-413E-BF23-729403BC00FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flix.Test", "Flix.Test\Flix.Test.csproj", "{9EA34E7B-6218-4F3D-A3C9-360A02F536B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{C48AC997-85DA-413E-BF23-729403BC00FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C48AC997-85DA-413E-BF23-729403BC00FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C48AC997-85DA-413E-BF23-729403BC00FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA34E7B-6218-4F3D-A3C9-360A02F536B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA34E7B-6218-4F3D-A3C9-360A02F536B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA34E7B-6218-4F3D-A3C9-360A02F536B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA34E7B-6218-4F3D-A3C9-360A02F536B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
