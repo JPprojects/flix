@@ -4,6 +4,7 @@ using System.Linq;
 using AcebookApi.Models;
 using Flix.API.Repo;
 using Flix.API.Repo.Users;
+using Microsoft.AspNetCore.Http;
 
 namespace AcebookApi.Controllers
 {
@@ -64,8 +65,45 @@ namespace AcebookApi.Controllers
                 var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
                 user.Password = encrpyt;
                 _userRepo.AddUser(user);
-                return RedirectToAction("Log-In", "Home");
+                return RedirectToAction("LogIn", "Home");
 
+            }
+
+        }
+
+        [HttpPost(Name = "Login")]
+        [Route("/User/Login")]
+        public IActionResult Login()
+        {
+            string username = Request.Form["username"];
+            string password = Request.Form["password"];
+
+
+            var user = _context.Users.FirstOrDefault(i => i.UserName == username);
+
+
+
+            if (user != null)
+            {
+                var db_password = user.Password;
+                var doesItMatch = new AuthoRepository();
+                var result = doesItMatch.SignInValidation(db_password, password);
+
+
+                if (result == true)
+                {
+                    HttpContext.Session.SetString("username", user.UserName);
+                    HttpContext.Session.SetInt32("UserId", user.Id);
+                    return RedirectToAction("Index", "Post");
+                }
+                else
+                {
+                    return RedirectToAction("Log_in", "Home");
+                };
+            }
+            else
+            {
+                return RedirectToAction("Log_in", "Home");
             }
 
         }

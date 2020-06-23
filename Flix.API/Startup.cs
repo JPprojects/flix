@@ -39,11 +39,13 @@ namespace Flix.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+            services.AddDistributedMemoryCache();
+            services.AddSession();
 
         }
 
-            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-            public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -70,6 +72,9 @@ namespace Flix.API
             });
 
             app.UseSwagger();
+
+            app.UseSession();
+
 
             app.UseSwaggerUI(c =>
             {
