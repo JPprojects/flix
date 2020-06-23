@@ -5,7 +5,7 @@ namespace AcebookApi.Models
     public class User
     {
         [Key]
-        public long Id { get; set; }
+        public int Id { get; set; }
         [Required]
         public string UserName { get; set; }
         [Required]

@@ -11,7 +11,7 @@ namespace Flix.API.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     UserName = table.Column<string>(nullable: false),
                     Password = table.Column<string>(nullable: false),

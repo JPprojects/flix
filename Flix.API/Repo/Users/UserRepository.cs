@@ -1,31 +1,67 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using AcebookApi.Models;
+using Flix.API.Repo.Users;
 
 namespace Flix.API.Repo
 {
-    public class UserRepository
+
+
+    public class UserRepository : IUserReposistory
     {
-        public readonly FlixContext _context;
+        private  FlixContext context;
 
         public UserRepository(FlixContext context)
         {
-            _context = context;
+            this.context = context;
         }
 
 
-        public List<User> ViewAll()
+
+        public List<User> GetAllUsers()
         {
-            return _context.Users.ToList();
+            return context.Users.ToList();
         }
 
-        public User Add(User user)
+        public User GetUserByID(int Id)
         {
-            _context.Users.Add(user);
-            _context.SaveChanges();
+            throw new NotImplementedException();
+        }
+
+        public User AddUser(User user)
+        {
+            context.Users.Add(user);
+            context.SaveChanges();
             return user;
         }
 
+
+        public void DeleteCustomer(int Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateCustomer(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save()
+        {
+            throw new NotImplementedException();
+        }
+
+       
+        public void DeleteUser(int Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User UpdateUser(User user)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

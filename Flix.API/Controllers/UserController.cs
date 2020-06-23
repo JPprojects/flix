@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AcebookApi.Models;
 using Flix.API.Repo;
+using Flix.API.Repo.Users;
 
 namespace AcebookApi.Controllers
 {
@@ -11,17 +12,20 @@ namespace AcebookApi.Controllers
     public class PostController : ControllerBase
     {
         private readonly FlixContext _context;
+        private IUserReposistory userReposistory;
+
 
         public PostController(FlixContext context)
         {
             _context = context;
+            this.userReposistory = new UserRepository(_context);
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<User>> GetAll()
+        public ActionResult<List<User>> GetAll()
         {
-            var userRepo = new UserRepository(_context);
-            return userRepo.ViewAll();
+
+            return this.userReposistory.GetAllUsers();
         }
 
         [HttpGet("{id}", Name = "GetUser")]
@@ -40,8 +44,7 @@ namespace AcebookApi.Controllers
         {
             var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
             user.Password = encrpyt;
-            var userRepo = new UserRepository(_context);
-            return userRepo.Add(user);
+            return this.userReposistory.AddUser(user);
         }
       
       

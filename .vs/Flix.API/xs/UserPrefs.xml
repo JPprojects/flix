@@ -2,18 +2,10 @@
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Controllers/UserController.cs">
     <Files>
-      <File FileName="Flix.Test/EncrytpionTest.cs" Line="1" Column="1" />
-      <File FileName="Flix.Test/AuthTest.cs" Line="26" Column="1" />
-      <File FileName="Flix.API/Controllers/UserController.cs" Line="31" Column="30" />
-      <File FileName="Flix.API/Models/User.cs" Line="17" Column="2" />
-      <File FileName="Flix.API/Repo/AuthoRepository.cs" Line="12" Column="1" />
-      <File FileName="Flix.API/Repo/EncrytpionRepository.cs" Line="20" Column="10" />
-      <File FileName="Flix.API/Repo/UserRepository.cs" Line="28" Column="1" />
-      <File FileName="Flix.API/Startup.cs" Line="33" Column="1" />
-      <File FileName="Flix.API/appsettings.json" Line="9" Column="14" />
-      <File FileName="Flix.API/Program.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Controllers/UserController.cs" Line="45" Column="61" />
+      <File FileName="Flix.API/Repo/Users/UserRepository.cs" Line="13" Column="6" />
       <File FileName="Flix.API/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Flix.API/Models/FlixContext.cs" Line="6" Column="44" />
+      <File FileName="Flix.API/Repo/Users/IUserReposistory.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,9 +18,14 @@
               <Node name="Controllers" expanded="True">
                 <Node name="UserController.cs" selected="True" />
               </Node>
+              <Node name="Migrations" expanded="True">
+                <Node name="20200622135904_UserTable.cs" expanded="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repo" expanded="True" />
+              <Node name="Repo" expanded="True">
+                <Node name="Users" expanded="True" />
+              </Node>
             </Node>
             <Node name="Flix.Test" expanded="True">
               <Node name="Dependencies" expanded="True" />

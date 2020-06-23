@@ -12,5 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repo\" />
+    <Folder Include="Repo\Users\" />
   </ItemGroup>
 </Project>
