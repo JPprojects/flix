@@ -11,33 +11,30 @@ namespace Flix.Api.UnitTest
     public class UserTest
     {
 
-        private readonly Mock<IUserReposistory> userRepo = new Mock<IUserReposistory>();
+        private readonly Mock<IUserReposistory> _userRepo = new Mock<IUserReposistory>();
         
 
 
        [TestMethod]
         public void AddUser()
         {
-           
+            var user = new User()
+            {
+                Id = 1,
+                UserName = "Glen",
+                EmailAddress = "Glen@dev.com",
+                Password = "Test",
+                FirstName = "Glen",
+                LastName = "Hani"
+            };
+
+           var result = _userRepo.Setup(x => x.AddUser(user)).Returns(user);
+
+
+            Assert.AreEqual(user, result);
 
         }
 
-        [TestMethod]
-        public void Dencrpyt()
-        {
-
-            // Arrange
-
-            string dytePassword = "MGzYMsUyPHfnIfSDNsdRrQ==";
-            var encyrption = new EncrytpionRepository(dytePassword);
-
-            // Act
-            var result = encyrption.ReturnDencrpyt();
-
-            // Assert
-
-            Assert.AreEqual("Test",result);
-        }
-
+        
     }
 }

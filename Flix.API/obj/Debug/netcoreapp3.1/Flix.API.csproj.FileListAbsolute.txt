@@ -12,6 +12,7 @@
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
@@ -34,6 +35,7 @@
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/student/Documents/Week11/-flix/Flix.API/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.csprojAssemblyReference.cache
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.AssemblyInfoInputs.cache
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.AssemblyInfo.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.csproj.CoreCompileInputs.cache
