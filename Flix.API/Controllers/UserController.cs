@@ -29,9 +29,9 @@ namespace AcebookApi.Controllers
         }
 
         [HttpGet("{id}", Name = "GetUser")]
-        public ActionResult<User> GetById(long id)
+        public ActionResult<User> GetById(int id)
         {
-            var item = _context.Users.Find(id);
+            var item = userReposistory.GetUserByID(id);
             if (item == null)
             {
                 return NotFound();

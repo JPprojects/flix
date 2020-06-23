@@ -25,9 +25,10 @@ namespace Flix.API.Repo
             return context.Users.ToList();
         }
 
-        public User GetUserByID(int Id)
+        public User GetUserByID(int id)
         {
-            throw new NotImplementedException();
+
+            return context.Users.Find(id);
         }
 
         public User AddUser(User user)
@@ -47,12 +48,6 @@ namespace Flix.API.Repo
         {
             throw new NotImplementedException();
         }
-
-        public void Save()
-        {
-            throw new NotImplementedException();
-        }
-
        
         public void DeleteUser(int Id)
         {
