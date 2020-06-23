@@ -39,9 +39,9 @@ namespace AcebookApi.Controllers
             }
             return item;
         }
-
+        
         [HttpPost]
-        public object SignUp(string username, string emailAddress, string password, string firstname, string lastname)
+        public IActionResult SignUp(string username, string emailAddress, string password, string firstname, string lastname)
         {
             var user = new User()
             {
@@ -56,14 +56,14 @@ namespace AcebookApi.Controllers
 
             if (result != null)
             {
-                return false;
+                return RedirectToAction("SignUp", "Home");
             }
             else
             {
                 var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
                 user.Password = encrpyt;
                 _userRepo.AddUser(user);
-                return user;
+                return RedirectToAction("Log-In", "Home");
 
             }
 
