@@ -25,10 +25,9 @@ namespace Flix.API.Repo
             return context.Users.ToList();
         }
 
-        public User GetUserByID(int id)
+        public User GetUserByID(int Id)
         {
-
-            return context.Users.Find(id);
+            throw new NotImplementedException();
         }
 
         public User AddUser(User user)
@@ -37,17 +36,32 @@ namespace Flix.API.Repo
             context.SaveChanges();
             return user;
         }
-       
-        public void DeleteUser(int id)
+
+
+        public void DeleteCustomer(int Id)
         {
-            var student = GetUserByID(id);
-            context.Users.Remove(student);
-            context.SaveChanges();
-        }        
+            throw new NotImplementedException();
+        }
+
+        public void UpdateCustomer(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save()
+        {
+            throw new NotImplementedException();
+        }
+
+       
+        public void DeleteUser(int Id)
+        {
+            throw new NotImplementedException();
+        }
 
         public User UpdateUser(User user)
         {
-            return user;
+            throw new NotImplementedException();
         }
     }
 }

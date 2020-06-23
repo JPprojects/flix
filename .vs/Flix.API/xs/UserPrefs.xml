@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Controllers/UserController.cs">
     <Files>
-      <File FileName="Flix.API/Controllers/UserController.cs" Line="48" Column="10" />
-      <File FileName="Flix.API/Repo/Users/UserRepository.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Controllers/UserController.cs" Line="45" Column="61" />
+      <File FileName="Flix.API/Repo/Users/UserRepository.cs" Line="13" Column="6" />
       <File FileName="Flix.API/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Repo/Users/IUserReposistory.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,6 +18,9 @@
               <Node name="Controllers" expanded="True">
                 <Node name="UserController.cs" selected="True" />
               </Node>
+              <Node name="Migrations" expanded="True">
+                <Node name="20200622135904_UserTable.cs" expanded="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repo" expanded="True">
@@ -27,11 +31,6 @@
               <Node name="Dependencies" expanded="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="Flix.API" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
