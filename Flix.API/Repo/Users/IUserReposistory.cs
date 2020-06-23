@@ -13,6 +13,5 @@ namespace Flix.API.Repo.Users
         User AddUser(User user);
         void DeleteUser(int Id);
         User UpdateUser(User user);
-        void Save();
     }
 }

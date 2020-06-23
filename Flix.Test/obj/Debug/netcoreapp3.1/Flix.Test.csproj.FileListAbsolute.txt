@@ -1,3 +1,7 @@
+/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csprojAssemblyReference.cache
+/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfoInputs.cache
+/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfo.cs
+/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csproj.CoreCompileInputs.cache
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.Views.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.Views.pdb
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/appsettings.Development.json
@@ -11,6 +15,7 @@
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.Test.runtimeconfig.dev.json
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.Test.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.Test.pdb
+/Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Castle.Core.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll
@@ -38,6 +43,7 @@
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/testhost.dll
+/Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Moq.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
@@ -50,6 +56,9 @@
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/xunit.abstractions.dll
+/Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/xunit.core.dll
+/Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/xunit.execution.dotnet.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -117,10 +126,6 @@
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.pdb
-/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csprojAssemblyReference.cache
-/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfoInputs.cache
-/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfo.cs
-/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csproj.CoreCompileInputs.cache
 /Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csproj.CopyComplete
 /Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.pdb

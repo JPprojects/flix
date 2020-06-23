@@ -7,7 +7,7 @@ using Flix.API.Repo.Users;
 
 namespace AcebookApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class PostController : ControllerBase
     {
@@ -29,9 +29,9 @@ namespace AcebookApi.Controllers
         }
 
         [HttpGet("{id}", Name = "GetUser")]
-        public ActionResult<User> GetById(long id)
+        public ActionResult<User> GetById(int id)
         {
-            var item = _context.Users.Find(id);
+            var item = userReposistory.GetUserByID(id);
             if (item == null)
             {
                 return NotFound();
@@ -40,13 +40,32 @@ namespace AcebookApi.Controllers
         }
 
         [HttpPost]
-        public object Create(User user)
+        public bool SignUp(string username, string emailAddress, string password, string firstname, string lastname)
         {
-            var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
-            user.Password = encrpyt;
-            return this.userReposistory.AddUser(user);
+            var user = new User()
+            {
+                UserName = username,
+                Password = password,
+                FirstName = firstname,
+                LastName = lastname,
+                EmailAddress = emailAddress
+            };
+
+            var result = _context.Users.FirstOrDefault(c => c.UserName == user.UserName);
+
+            if (result != null)
+            {
+                return false;
+            }
+            else
+            {
+                var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
+                user.Password = encrpyt;
+                this.userReposistory.AddUser(user);
+                return true;
+
+            }
+
         }
-      
-      
     }
 }
