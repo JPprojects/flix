@@ -73,8 +73,18 @@ namespace Flix.API
 
             app.UseSwagger();
 
-            app.UseSession();
+            //HTTP redirect for controllers 
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
+
+
+            app.UseCookiePolicy();
+
+
+
+            //Setting up Sessions 
+            app.UseSession();
 
             app.UseSwaggerUI(c =>
             {

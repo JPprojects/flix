@@ -1,25 +1,22 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Controllers/UserController.cs">
     <Files>
-      <File FileName="Flix.API/Controllers/HomeController.cs" Line="43" Column="1" />
-      <File FileName="Flix.API/Controllers/UserController.cs" />
-      <File FileName="Flix.API/Views/Home/LogIn.cshtml" />
-      <File FileName="Flix.API/Startup.cs" />
-      <File FileName="Flix.API/Program.cs" Line="16" Column="1" />
+      <File FileName="Flix.API/Controllers/UserController.cs" Line="95" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Flix.API" expanded="True">
             <Node name="Flix.API" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
             <Node name="Flix.Test" expanded="True" />
           </Node>
