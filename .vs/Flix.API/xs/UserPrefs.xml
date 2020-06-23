@@ -1,6 +1,9 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.Test/UserTest.cs">
+    <Files>
+      <File FileName="Flix.Test/UserTest.cs" Line="24" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -9,9 +12,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repo" expanded="True">
@@ -22,6 +23,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="UserTest.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -33,11 +35,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Flix.API" expanded="True" selected="True">
-            <Node name="Flix.Test" expanded="True">
-              <Node name="Flix.Api.UnitTest" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="Flix.API" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

@@ -1,26 +1,25 @@
+using AcebookApi.Models;
 using Flix.API.Repo;
+using Flix.API.Repo.Users;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 
 namespace Flix.Api.UnitTest
 {
     [TestClass]
-    public class EncrytpionTest
+    public class UserTest
     {
-        [TestMethod]
-        public void Encyrption()
+
+        private readonly Mock<IUserReposistory> userRepo = new Mock<IUserReposistory>();
+        
+
+
+       [TestMethod]
+        public void AddUser()
         {
+           
 
-            // Arrange
-
-            string password = "Test";
-            var encyrption = new EncrytpionRepository(password);
-
-            // Act
-            var result = encyrption.ReturnEncrpyt();
-
-            // Assert
-         
-            Assert.AreEqual("MGzYMsUyPHfnIfSDNsdRrQ==",result);
         }
 
         [TestMethod]

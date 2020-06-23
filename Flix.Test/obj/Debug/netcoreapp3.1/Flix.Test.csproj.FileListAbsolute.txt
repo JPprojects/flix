@@ -1,7 +1,3 @@
-/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csprojAssemblyReference.cache
-/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfoInputs.cache
-/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfo.cs
-/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csproj.CoreCompileInputs.cache
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.Views.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.Views.pdb
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/appsettings.Development.json
@@ -126,6 +122,10 @@
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.pdb
+/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csprojAssemblyReference.cache
+/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfoInputs.cache
+/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfo.cs
+/Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csproj.CoreCompileInputs.cache
 /Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csproj.CopyComplete
 /Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.pdb

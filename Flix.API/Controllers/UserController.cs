@@ -11,27 +11,28 @@ namespace AcebookApi.Controllers
     [ApiController]
     public class PostController : ControllerBase
     {
+        private IUserReposistory _userRepo;
+
         private readonly FlixContext _context;
-        private IUserReposistory userReposistory;
 
-
-        public PostController(FlixContext context)
+        public PostController(IUserReposistory user, FlixContext context)
         {
+
+            _userRepo = user;
             _context = context;
-            this.userReposistory = new UserRepository(_context);
         }
 
         [HttpGet]
         public ActionResult<List<User>> GetAll()
         {
 
-            return this.userReposistory.GetAllUsers();
+            return this._userRepo.GetAllUsers();
         }
 
         [HttpGet("{id}", Name = "GetUser")]
         public ActionResult<User> GetById(int id)
         {
-            var item = userReposistory.GetUserByID(id);
+            var item = _userRepo.GetUserByID(id);
             if (item == null)
             {
                 return NotFound();
@@ -40,7 +41,7 @@ namespace AcebookApi.Controllers
         }
 
         [HttpPost]
-        public bool SignUp(string username, string emailAddress, string password, string firstname, string lastname)
+        public object SignUp(string username, string emailAddress, string password, string firstname, string lastname)
         {
             var user = new User()
             {
@@ -61,8 +62,8 @@ namespace AcebookApi.Controllers
             {
                 var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
                 user.Password = encrpyt;
-                this.userReposistory.AddUser(user);
-                return true;
+                _userRepo.AddUser(user);
+                return user;
 
             }
 
