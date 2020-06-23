@@ -2,11 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Controllers/UserController.cs">
     <Files>
-      <File FileName="Flix.API/Controllers/UserController.cs" Line="34" Column="45" />
-      <File FileName="Flix.API/Models/ErrorViewModel.cs" Line="1" Column="1" />
-      <File FileName="Flix.API/Repo/Users/UserRepository.cs" Line="28" Column="32" />
-      <File FileName="Flix.API/Models/FlixContext.cs" Line="1" Column="1" />
-      <File FileName="Flix.API/Repo/Users/IUserReposistory.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Controllers/UserController.cs" Line="48" Column="10" />
+      <File FileName="Flix.API/Repo/Users/UserRepository.cs" Line="1" Column="1" />
       <File FileName="Flix.API/Controllers/HomeController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -19,9 +16,6 @@
               </Node>
               <Node name="Controllers" expanded="True">
                 <Node name="UserController.cs" selected="True" />
-              </Node>
-              <Node name="Migrations" expanded="True">
-                <Node name="20200622135904_UserTable.cs" expanded="True" />
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />

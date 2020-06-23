@@ -37,26 +37,17 @@ namespace Flix.API.Repo
             context.SaveChanges();
             return user;
         }
-
-
-        public void DeleteCustomer(int Id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateCustomer(User user)
-        {
-            throw new NotImplementedException();
-        }
        
-        public void DeleteUser(int Id)
+        public void DeleteUser(int id)
         {
-            throw new NotImplementedException();
-        }
+            var student = GetUserByID(id);
+            context.Users.Remove(student);
+            context.SaveChanges();
+        }        
 
         public User UpdateUser(User user)
         {
-            throw new NotImplementedException();
+            return user;
         }
     }
 }
