@@ -39,31 +39,32 @@ namespace AcebookApi.Controllers
             }
             return item;
         }
-
-        [HttpPost]
-        public object SignUp(string username, string emailAddress, string password, string firstname, string lastname)
+        
+        [HttpPost(Name = "SignUp")]
+        [Route("/User/SignUp")]
+        public ActionResult SignUp()
         {
             var user = new User()
             {
-                UserName = username,
-                Password = password,
-                FirstName = firstname,
-                LastName = lastname,
-                EmailAddress = emailAddress
+                UserName = Request.Form["username"],
+                Password = Request.Form["password"],
+                FirstName = Request.Form["firstName"],
+                LastName = Request.Form["lastName"],
+                EmailAddress = Request.Form["emailAddress"]
             };
 
             var result = _context.Users.FirstOrDefault(c => c.UserName == user.UserName);
 
             if (result != null)
             {
-                return false;
+                return RedirectToAction("SignUp", "Home");
             }
             else
             {
                 var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
                 user.Password = encrpyt;
                 _userRepo.AddUser(user);
-                return user;
+                return RedirectToAction("Log-In", "Home");
 
             }
 
