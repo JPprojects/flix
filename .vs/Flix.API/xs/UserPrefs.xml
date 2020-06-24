@@ -1,10 +1,6 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
-  <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Startup.cs">
-    <Files>
-      <File FileName="Flix.API/Controllers/UserController.cs" Line="95" Column="1" />
-      <File FileName="Flix.API/Startup.cs" Line="79" Column="12" />
-    </Files>
+  <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -16,10 +12,12 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
+                <Node name="User" expanded="True" />
               </Node>
-              <Node name="Startup.cs" selected="True" />
             </Node>
             <Node name="Flix.Test" expanded="True" />
           </Node>
