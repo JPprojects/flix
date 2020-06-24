@@ -13,7 +13,7 @@ namespace Flix.API.Models
         public string Title { get; set; }
 
         [ForeignKey("User")]
-        public long UserId { get; set; }
+        public int UserId { get; set; }
 
         public virtual User User { get; set; }
 
