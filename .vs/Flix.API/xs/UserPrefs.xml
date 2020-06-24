@@ -4,7 +4,16 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Flix.API" expanded="True" selected="True" />
+          <Node name="Flix.API" expanded="True">
+            <Node name="Flix.API" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Repo" expanded="True">
+                <Node name="Playlist" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+            <Node name="Flix.Test" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>

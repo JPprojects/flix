@@ -30,6 +30,7 @@ namespace Flix.API
         {
 
             services.AddScoped<IUserReposistory, UserRepository>();
+            services.AddScoped<IPlaylistRepository, PlaylistRepository>();
             services.AddControllersWithViews();
             services.AddDbContext<FlixContext>(options =>
                  options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));

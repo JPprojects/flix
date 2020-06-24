@@ -6,17 +6,17 @@ using Flix.API.Repo.Users;
 using Microsoft.AspNetCore.Http;
 using Flix.API.Models;
 
-namespace AcebookApi.Controllers
+namespace Flix.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class PostController : ControllerBase
+    public class UserController : ControllerBase
     {
         private IUserReposistory _userRepo;
 
         private readonly FlixContext _context;
 
-        public PostController(IUserReposistory user, FlixContext context)
+        public UserController(IUserReposistory user, FlixContext context)
         {
 
             _userRepo = user;
