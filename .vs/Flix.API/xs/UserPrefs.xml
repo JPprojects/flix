@@ -10,10 +10,11 @@
               <Node name="Migrations" expanded="True">
                 <Node name="20200622135904_UserTable.cs" expanded="True" />
               </Node>
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="User.cs" selected="True" />
+              </Node>
               <Node name="Repo" expanded="True">
                 <Node name="Users" expanded="True" />
-                <Node name="EncrytpionRepository.cs" selected="True" />
               </Node>
             </Node>
             <Node name="Flix.Test" expanded="True">

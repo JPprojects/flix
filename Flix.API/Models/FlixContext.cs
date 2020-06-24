@@ -8,6 +8,7 @@ namespace Flix.API.Models
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Playlist> Playlists { get; set; }
+        public DbSet<Watchlist> Watchlists { get; set; }
 
         // protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         // {
