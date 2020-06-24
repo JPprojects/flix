@@ -38,11 +38,12 @@ namespace Flix.API.Repo.Users
             return user;
         }
        
-        public void DeleteUser(int id)
+        public User DeleteUser(int id)
         {
-            var student = GetUserByID(id);
-            context.Users.Remove(student);
+            var user = GetUserByID(id);
+            context.Users.Remove(user);
             context.SaveChanges();
+            return user;
         }        
 
         public User UpdateUser(User user)

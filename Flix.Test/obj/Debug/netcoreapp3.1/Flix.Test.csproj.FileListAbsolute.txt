@@ -149,6 +149,7 @@
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll
 /Users/student/Documents/Week11/-flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll

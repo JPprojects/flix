@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Wcli8CTmYQJ9TBAWiV6aSqvCTaK+fGNBoBQ8XNTuB60CjA9QsIjGG0x6d3TGIdrCH9Ayv9IOoIKtXKVdzcaAGw==",
+  "dgSpecHash": "PDoUQjQEupTAn/v/MFC7vk2bjwcRsBPRuufZqQmuK14U8MO7Rd0PcTcEzvOlCy4n76gBf3UpxHnkShS96fVA0A==",
   "success": true,
   "projectFilePath": "/Users/student/Documents/Week11/-flix/Flix.Test/Flix.Test.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "/Users/student/.nuget/packages/microsoft.entityframeworkcore/3.1.5/microsoft.entityframeworkcore.3.1.5.nupkg.sha512",
     "/Users/student/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.5/microsoft.entityframeworkcore.abstractions.3.1.5.nupkg.sha512",
     "/Users/student/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.5/microsoft.entityframeworkcore.analyzers.3.1.5.nupkg.sha512",
+    "/Users/student/.nuget/packages/microsoft.entityframeworkcore.inmemory/3.1.5/microsoft.entityframeworkcore.inmemory.3.1.5.nupkg.sha512",
     "/Users/student/.nuget/packages/microsoft.entityframeworkcore.relational/3.1.4/microsoft.entityframeworkcore.relational.3.1.4.nupkg.sha512",
     "/Users/student/.nuget/packages/microsoft.entityframeworkcore.relational.design/1.1.0/microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512",
     "/Users/student/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
