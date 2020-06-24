@@ -2,15 +2,17 @@
 using Flix.API.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Flix.API.Migrations
 {
     [DbContext(typeof(FlixContext))]
-    partial class FlixContextModelSnapshot : ModelSnapshot
+    [Migration("20200624133838_AddedWatchList")]
+    partial class AddedWatchList
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
