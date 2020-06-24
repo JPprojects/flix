@@ -21,6 +21,8 @@ namespace Flix.API.Controllers
 
         public IActionResult Index()
         {
+            var api = new ApiIntergration();
+            api.apiLoader();
             return View();
         }
 
