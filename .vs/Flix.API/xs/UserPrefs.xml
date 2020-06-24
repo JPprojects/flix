@@ -7,13 +7,15 @@
       <File FileName="Flix.API/Repo/Users/UserRepository.cs" Line="28" Column="4" />
       <File FileName="Flix.API/Repo/Users/IUserReposistory.cs" Line="8" Column="2" />
     </Files>
+  <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Flix.API" expanded="True">
             <Node name="Flix.API" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
@@ -27,8 +29,15 @@
             <Node name="Flix.Test" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+                <Node name="User" expanded="True" />
               </Node>
             </Node>
+            <Node name="Flix.Test" expanded="True" />
           </Node>
         </State>
       </Pad>

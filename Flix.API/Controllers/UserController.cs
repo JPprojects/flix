@@ -4,6 +4,7 @@ using System.Linq;
 using AcebookApi.Models;
 using Flix.API.Repo;
 using Flix.API.Repo.Users;
+using Microsoft.AspNetCore.Http;
 
 namespace AcebookApi.Controllers
 {
@@ -39,32 +40,70 @@ namespace AcebookApi.Controllers
             }
             return item;
         }
-
-        [HttpPost]
-        public object SignUp(string username, string emailAddress, string password, string firstname, string lastname)
+        
+        [HttpPost(Name = "SignUp")]
+        [Route("/User/SignUp")]
+        public ActionResult SignUp()
         {
             var user = new User()
             {
-                UserName = username,
-                Password = password,
-                FirstName = firstname,
-                LastName = lastname,
-                EmailAddress = emailAddress
+                UserName = Request.Form["username"],
+                Password = Request.Form["password"],
+                FirstName = Request.Form["firstName"],
+                LastName = Request.Form["lastName"],
+                EmailAddress = Request.Form["emailAddress"]
             };
 
             var result = _context.Users.FirstOrDefault(c => c.UserName == user.UserName);
 
             if (result != null)
             {
-                return false;
+                return RedirectToAction("SignUp", "Home");
             }
             else
             {
                 var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
                 user.Password = encrpyt;
                 _userRepo.AddUser(user);
-                return user;
+                return RedirectToAction("LogIn", "Home");
 
+            }
+
+        }
+
+        [HttpPost(Name = "Login")]
+        [Route("/User/Login")]
+        public IActionResult Login()
+        {
+            string username = Request.Form["username"];
+            string password = Request.Form["password"];
+
+
+            var user = _context.Users.FirstOrDefault(i => i.UserName == username);
+
+
+
+            if (user != null)
+            {
+                var db_password = user.Password;
+                var doesItMatch = new AuthoRepository();
+                var result = doesItMatch.SignInValidation(db_password, password);
+
+
+                if (result == true)
+                {
+                    HttpContext.Session.SetString("username", user.UserName);
+                    HttpContext.Session.SetInt32("UserId", user.Id);
+                    return RedirectToAction("UserIndex", "Home");
+                }
+                else
+                {
+                    return RedirectToAction("Log_in", "Home");
+                };
+            }
+            else
+            {
+                return RedirectToAction("Log_in", "Home");
             }
 
         }
