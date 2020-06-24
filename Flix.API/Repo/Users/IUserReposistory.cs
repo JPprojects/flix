@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using AcebookApi.Models;
+using Flix.API.Models;
 
 namespace Flix.API.Repo.Users
 {

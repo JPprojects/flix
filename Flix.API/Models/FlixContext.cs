@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-namespace AcebookApi.Models
+namespace Flix.API.Models
 {
     public class FlixContext : DbContext
     {
@@ -7,6 +7,8 @@ namespace AcebookApi.Models
         {
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Playlist> Playlists { get; set; }
+        public DbSet<Watchlist> Watchlists { get; set; }
 
         // protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         // {

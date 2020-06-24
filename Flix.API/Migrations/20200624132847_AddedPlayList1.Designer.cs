@@ -2,15 +2,17 @@
 using Flix.API.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Flix.API.Migrations
 {
     [DbContext(typeof(FlixContext))]
-    partial class FlixContextModelSnapshot : ModelSnapshot
+    [Migration("20200624132847_AddedPlayList1")]
+    partial class AddedPlayList1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -68,41 +70,11 @@ namespace Flix.API.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Flix.API.Models.Watchlist", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<string>("MovieTitle")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("PlaylistId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PlaylistId");
-
-                    b.ToTable("Watchlists");
-                });
-
             modelBuilder.Entity("Flix.API.Models.Playlist", b =>
                 {
                     b.HasOne("Flix.API.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Flix.API.Models.Watchlist", b =>
-                {
-                    b.HasOne("Flix.API.Models.Playlist", "Playlist")
-                        .WithMany()
-                        .HasForeignKey("PlaylistId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
