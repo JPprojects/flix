@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Flix.API.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace Flix.API.Controllers
 {
@@ -36,10 +37,16 @@ namespace Flix.API.Controllers
 
         public IActionResult UserIndex()
         {
-            return View("../User/Index");
+            ViewBag.Username = HttpContext.Session.GetString("username");
+            return View("../User/Welcome");
         }
 
         public IActionResult SignUp()
+        {
+            return View();
+        }
+
+        public IActionResult LogIn()
         {
             return View();
         }
