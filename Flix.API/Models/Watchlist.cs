@@ -9,7 +9,7 @@ namespace Flix.API.Models
         public int Id { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string MovieTitle { get; set; }
 
         [ForeignKey("Playlist")]
         public int UserId { get; set; }
