@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using AcebookApi.Models;
 using Flix.API.Repo;
 using Flix.API.Repo.Users;
 using Microsoft.AspNetCore.Http;
+using Flix.API.Models;
 
 namespace AcebookApi.Controllers
 {

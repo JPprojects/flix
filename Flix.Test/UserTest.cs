@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using AcebookApi.Models;
+using Flix.API.Models;
 using Flix.API.Repo;
 using Flix.API.Repo.Users;
 using Microsoft.EntityFrameworkCore;

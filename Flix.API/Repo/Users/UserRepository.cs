@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using AcebookApi.Models;
+using Flix.API.Models;
 using Flix.API.Repo.Users;
 
 namespace Flix.API.Repo.Users
