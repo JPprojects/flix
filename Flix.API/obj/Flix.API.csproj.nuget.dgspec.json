@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/student/Documents/ProjectsC#/flix/Flix.API/Flix.API.csproj": {}
+    "/Users/student/Documents/Week11/-flix/Flix.API/Flix.API.csproj": {}
   },
   "projects": {
-    "/Users/student/Documents/ProjectsC#/flix/Flix.API/Flix.API.csproj": {
+    "/Users/student/Documents/Week11/-flix/Flix.API/Flix.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/student/Documents/ProjectsC#/flix/Flix.API/Flix.API.csproj",
+        "projectUniqueName": "/Users/student/Documents/Week11/-flix/Flix.API/Flix.API.csproj",
         "projectName": "Flix.API",
-        "projectPath": "/Users/student/Documents/ProjectsC#/flix/Flix.API/Flix.API.csproj",
+        "projectPath": "/Users/student/Documents/Week11/-flix/Flix.API/Flix.API.csproj",
         "packagesPath": "/Users/student/.nuget/packages/",
-        "outputPath": "/Users/student/Documents/ProjectsC#/flix/Flix.API/obj/",
+        "outputPath": "/Users/student/Documents/Week11/-flix/Flix.API/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -39,6 +39,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"

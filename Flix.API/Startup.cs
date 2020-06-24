@@ -40,6 +40,7 @@ namespace Flix.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
             services.AddDistributedMemoryCache();
+
             services.AddSession();
 
         }
@@ -57,13 +58,13 @@ namespace Flix.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseSession();
+            app.UseSwagger();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -71,20 +72,10 @@ namespace Flix.API
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            app.UseSwagger();
-
-            //HTTP redirect for controllers 
+          
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
-
-
             app.UseCookiePolicy();
-
-
-
-            //Setting up Sessions 
-            app.UseSession();
 
             app.UseSwaggerUI(c =>
             {
