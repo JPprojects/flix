@@ -11,29 +11,32 @@ namespace Flix.Api.UnitTest
     public class UserTest
     {
 
-        private readonly Mock<IUserReposistory> _userRepo = new Mock<IUserReposistory>();
-        
 
+      
 
        [TestMethod]
         public void AddUser()
         {
+
             var user = new User()
             {
                 Id = 1,
-                UserName = "Glen",
-                EmailAddress = "Glen@dev.com",
+                UserName= "GlenDev",
+                EmailAddress = "Test@dev.com",
                 Password = "Test",
                 FirstName = "Glen",
-                LastName = "Hani"
+                LastName = "Get"
             };
+            Mock<IUserReposistory> userRepo = new Mock<IUserReposistory>();
 
-           var result = _userRepo.Setup(x => x.AddUser(user)).Returns(user);
+            // Setup Mock
+            var result = userRepo.Setup(x => x.GetUserByID(1)).Returns(user);
 
 
-            Assert.AreEqual(user, result);
+            Assert.Equals(result, user.id);
 
         }
+    }
 
         
     }
