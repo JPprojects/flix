@@ -12,6 +12,8 @@ namespace Flix.Api.UnitTest
     public class UserTest
     {
 
+
+
         [TestMethod]
         public void GetAllUsers()
         {
@@ -60,6 +62,7 @@ namespace Flix.Api.UnitTest
                 Assert.AreEqual("Glen", users.UserName);
                 Assert.AreEqual("dev@test.com", users.EmailAddress);
                 Assert.AreEqual("MGzYMsUyPHfnIfSDNsdRrQ==", users.Password);
+                context.Dispose();
             }
 
         }

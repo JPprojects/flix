@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.Test/UserTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.Test/AuthTest.cs">
     <Files>
       <File FileName="Flix.API/Repo/Users/UserRepository.cs" Line="55" Column="1" />
       <File FileName="Flix.Test/AuthTest.cs" Line="55" Column="1" />
-      <File FileName="Flix.Test/UserTest.cs" Line="48" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +19,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="UserTest.cs" selected="True" />
+              <Node name="AuthTest.cs" selected="True" />
             </Node>
           </Node>
         </State>
