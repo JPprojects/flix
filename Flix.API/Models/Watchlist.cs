@@ -12,7 +12,7 @@ namespace Flix.API.Models
         public string MovieTitle { get; set; }
 
         [ForeignKey("Playlist")]
-        public int UserId { get; set; }
+        public int PlaylistId { get; set; }
 
         public virtual Playlist Playlist { get; set; }
 

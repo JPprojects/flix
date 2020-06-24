@@ -4,25 +4,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Flix.API" expanded="True">
-            <Node name="Flix.API" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Migrations" expanded="True">
-                <Node name="20200622135904_UserTable.cs" expanded="True" />
-              </Node>
-              <Node name="Models" expanded="True">
-                <Node name="User.cs" selected="True" />
-              </Node>
-              <Node name="Repo" expanded="True">
-                <Node name="Users" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Flix.Test" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Flix.API" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
