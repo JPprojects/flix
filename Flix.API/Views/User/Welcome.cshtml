@@ -2,13 +2,17 @@
     ViewData["Title"] = "#Flix";
 
 }
-    <div class="container pt-40">
-        <div class="head">
-            <h1 class="text-white">Welcome, @ViewBag.Username to #Flix</h1>
-            <a href="" class="user--icon__white"><img class="user--icon" src="/images/usericon.svg"/></a>
-        </div>
-        <div class="moviesection">
-            <ul>
-            </ul>
-        </div>
+
+<div class="container">
+    <div class="left-panel pt-40">
+        <h1 class="text-white">@ViewBag.Username</h1>
+        <img class="user--icon" src="/images/usericon.svg" />
+        <ul>
+            <li><a class="text-white" asp-controller="Home" asp-action="Playlist">Playlist</a></li>
+            <li><a class="text-white" asp-controller="Home" asp-action="LogIn">Log out</a></li>
+        </ul>
     </div>
+    <div class="main-section pt-40">
+        <h1 class="text-white">Welcome, @ViewBag.Username to #Flix</h1>
+    </div>
+</div>
