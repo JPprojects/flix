@@ -19,5 +19,6 @@
     <Folder Include="Repo\" />
     <Folder Include="Repo\Users\" />
     <Folder Include="Views\User\" />
+    <Folder Include="Repo\Playlist\" />
   </ItemGroup>
 </Project>
