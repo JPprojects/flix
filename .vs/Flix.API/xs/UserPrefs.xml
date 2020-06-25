@@ -6,13 +6,35 @@
         <State name="__root__">
           <Node name="Flix.API" expanded="True">
             <Node name="Flix.API" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Repo" expanded="True">
                 <Node name="Playlist" expanded="True" />
               </Node>
-              <Node name="Startup.cs" selected="True" />
             </Node>
-            <Node name="Flix.Test" expanded="True" />
+            <Node name="Flix.Test" expanded="True">
+              <Node name="UserTest.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Flix.API" expanded="True">
+            <Node name="Flix.Test" expanded="True">
+              <Node name="Flix.Api.UnitTest" expanded="True">
+                <Node name="AuthoTest" expanded="True" />
+                <Node name="EncrytpionTest" expanded="True" />
+                <Node name="PlaylistTest" expanded="True">
+                  <Node name="GetAllPlaylist" selected="True" />
+                </Node>
+                <Node name="UserTest" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

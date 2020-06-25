@@ -10,7 +10,7 @@ namespace Flix.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : Controller
     {
         private IUserReposistory _userRepo;
 
