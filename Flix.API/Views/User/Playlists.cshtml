@@ -15,16 +15,25 @@
     <div class="main-section pt-40">
         <h1 class="text-white">Here are yout playlists @ViewBag.Username</h1>
 
-        <ul class="container--row">
+        <ul class="container--column">
             <li>
                 <div class="card">
                     <h2>Create new playlist</h2>
-                        <form>
-                            <input class="form-input" type="text" name="Title" placeholder="Playlist Title" required="" />
+                        <form asp-controller="Playlist" asp-action="Create" method="post">
+                            <input class="form-input" type="text" name="title" placeholder="Playlist Title" required="" />
                             <input type="submit" value="Add" class="button" />
                         </form>
                 </div>
             </li>
+            @foreach (var playlist in @ViewBag.Posts)
+            {
+                  <li>
+                        <form class="card" asp-controller="Playlist" asp-action="Delete" asp-route-id="@playlist.Id" method="post">
+                            <h2>@playlist.Title</h2>
+                            <input type="submit" value="Delete" class="button" />
+                        </form>
+                 </li>
+            }
         </ul>
     </div>
 </div>
