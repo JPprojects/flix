@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Services/TheMoviedb.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Controllers/PlaylistController.cs">
     <Files>
       <File FileName="Flix.API/Controllers/UserController.cs" Line="1" Column="1" />
-      <File FileName="Flix.API/Models/Result.cs" Line="11" Column="40" />
-      <File FileName="Flix.API/Models/Search.cs" Line="11" Column="50" />
-      <File FileName="Flix.API/Models/ApiIntergration.cs" Line="48" Column="56" />
+      <File FileName="Flix.API/Models/Result.cs" />
+      <File FileName="Flix.API/Models/Search.cs" />
+      <File FileName="Flix.API/Controllers/TheMoviedbController.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Controllers/PlaylistController.cs" Line="12" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +14,9 @@
           <Node name="Flix.API" expanded="True">
             <Node name="Flix.API" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="PlaylistController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Repo" expanded="True" />
               <Node name="Services" expanded="True" />
