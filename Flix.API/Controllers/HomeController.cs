@@ -21,8 +21,6 @@ namespace Flix.API.Controllers
 
         public IActionResult Index()
         {
-            var api = new ApiIntergration();
-            api.apiLoader();
             return View();
         }
 
@@ -51,12 +49,6 @@ namespace Flix.API.Controllers
         public IActionResult LogIn()
         {
             return View();
-        }
-
-        public IActionResult Playlist()
-        {
-            ViewBag.Username = HttpContext.Session.GetString("username");
-            return View("../User/Playlists");
         }
     }
 }
