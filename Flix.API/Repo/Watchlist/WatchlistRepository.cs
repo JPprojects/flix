@@ -9,55 +9,45 @@ namespace Flix.API.Repo.Users
 {
 
 
-    public class PlaylistRepository : IPlaylistRepository
+    public class WatchlistRepository : IWatchlistRepository
     {
         private  FlixContext context;
 
-        public PlaylistRepository(FlixContext context)
+        public WatchlistRepository(FlixContext context)
         {
             this.context = context;
         }
 
-        public Playlist AddPlaylist(string title, int UserId)
-        { 
-            var playlist = new Playlist()
+        public Watchlist AddMovie(string title, int playListId)
+        {
+            var watchlist = new Watchlist()
             {
-                Title = title,
-                UserId = 1
+                MovieTitle = title,
+                PlaylistId = 1
             };
-            context.Playlists.Add(playlist);
+
+            context.Watchlists.Add(watchlist);
             context.SaveChanges();
-            return playlist;
+            return watchlist;
         }
 
-        public Playlist DeletePlayListById(int Id)
+        public Watchlist DeleteMovieFromPlaylist(int Id)
         {
-            var playlist = GetPlaylistById(Id);
-            context.Playlists.Remove(playlist);
+            var watchlist = GetWatchlistById(Id);
+            context.Watchlists.Remove(watchlist);
             context.SaveChanges();
-            return playlist;
+            return watchlist;
         }
 
-        public void EditPlayList(string title, int Id)
+        public List<Watchlist> GetMoviesByPlaylistId(int playListId)
         {
-            var playlist = GetPlaylistById(Id);
-            playlist.Title = title;
-            context.SaveChanges();
+
+            return context.Watchlists.Where(i => i.PlaylistId == playListId).ToList();
         }
 
-        public List<Playlist> GetAllPlaylistByUserId(int? Id)
+        public Watchlist GetWatchlistById(int Id)
         {
-            return context.Playlists.Where(i => i.UserId == Id).ToList();
-        }
-
-        public List<Playlist> GetAllPlaylists()
-        {
-            return context.Playlists.ToList();
-        }
-
-        public Playlist GetPlaylistById(int Id)
-        {
-            return context.Playlists.Find(Id);
+            return context.Watchlists.Find(Id);
         }
     }
 }

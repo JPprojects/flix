@@ -6,14 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Flix.API.Repo.Users
 {
-    public interface IPlaylistRepository
+    public interface IWatchlistRepository
     {
-        List<Playlist> GetAllPlaylists();
-        Playlist GetPlaylistById(int Id);
-        Playlist AddPlaylist(string title, int UserId);
-        Playlist DeletePlayListById(int Id);
-        void EditPlayList(string title, int Id);
-        List<Playlist> GetAllPlaylistByUserId(int? Id);
-      
+        List<Watchlist> GetMoviesByPlaylistId(int playListId);
+        Watchlist AddMovie(string title, int playListId);
+        Watchlist DeleteMovieFromPlaylist(int Id);
+        Watchlist GetWatchlistById(int Id);
     }
 }

@@ -14,6 +14,5 @@ namespace Flix.API.Repo.Users
         Playlist DeletePlayListById(int Id);
         void EditPlayList(string title, int Id);
         List<Playlist> GetAllPlaylistByUserId(int? Id);
-      
     }
 }
