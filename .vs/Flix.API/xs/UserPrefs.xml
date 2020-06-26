@@ -1,18 +1,43 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
-  <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Services/TheMoviedb.cs">
+    <Files>
+      <File FileName="Flix.API/Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Models/Result.cs" Line="11" Column="40" />
+      <File FileName="Flix.API/Models/Search.cs" Line="11" Column="50" />
+      <File FileName="Flix.API/Models/ApiIntergration.cs" Line="48" Column="56" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Flix.API" expanded="True" selected="True" />
+          <Node name="Flix.API" expanded="True">
+            <Node name="Flix.API" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repo" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Flix.Test" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Flix.Test.Controllers/Flix.Test.Controllers.csproj</String>
+    <String>Flix.Test2/Flix.Test2.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/student/Documents/ProjectsC#/flix/Flix.Test/AuthTest.cs" relfile="Flix.Test/AuthTest.cs" line="19" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

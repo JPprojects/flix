@@ -8,13 +8,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using Newtonsoft.Json;
+using Flix.API.Models;
 
-namespace Flix.API.Models
+namespace Flix.API.Services
 {
     // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
-    public class ApiIntergration 
+    public class TheMoviedb 
     {
-        public List<Search> apiLoader()
+        public List<Search> GetPopularity()
         {
             string JSon = null;
             string apiKey = "?api_key=4311ad461d9e5136c6bd9a5044968836";
@@ -44,7 +45,7 @@ namespace Flix.API.Models
     {
         public static IApplicationBuilder UseMiddlewareClassTemplate(this IApplicationBuilder builder)
         {
-            return builder.UseMiddleware<ApiIntergration>();
+            return builder.UseMiddleware<TheMoviedb>();
         }
     }
 }
