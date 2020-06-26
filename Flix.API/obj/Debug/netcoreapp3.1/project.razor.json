@@ -20556,6 +20556,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/User/Playlists.cshtml",
+      "TargetPath": "Views\\User\\Playlists.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
