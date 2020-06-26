@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "#Flix";
+
+}
+
+<div class="container">
+    <div class="left-panel pt-40">
+        <h1 class="text-white">@ViewBag.Username</h1>
+        <img class="user--icon" src="/images/usericon.svg" />
+        <ul>
+            <li><a class="text-white" asp-controller="Home" asp-action="UserIndex">Home</a></li>
+            <li><a class="text-white" asp-controller="Home" asp-action="LogIn">Log out</a></li>
+        </ul>
+    </div>
+    <div class="main-section pt-40">
+        <h1 class="text-white">Here are yout playlists @ViewBag.Username</h1>
+
+        <ul class="container--row">
+            <li>
+                <div class="card">
+                    <h2>Create new playlist</h2>
+                        <form>
+                            <input class="form-input" type="text" name="Title" placeholder="Playlist Title" required="" />
+                            <input type="submit" value="Add" class="button" />
+                        </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
