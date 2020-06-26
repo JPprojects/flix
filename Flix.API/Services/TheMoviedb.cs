@@ -33,7 +33,9 @@ namespace Flix.API.Services
                 sr.Close();
             }
 
-             List<Search> items = JsonConvert.DeserializeObject<List<Search>>(JSon);
+             var items = JsonConvert.DeserializeObject<List<Search>>(JSon);
+
+  
 
             return items;
         }
