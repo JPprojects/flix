@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AcebookApi.Models
+namespace Flix.API.Models
 {
     public class User
     {

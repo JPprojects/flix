@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using AcebookApi.Models;
+using Flix.API.Models;
 
 namespace Flix.API.Repo.Users
 {
@@ -10,7 +10,7 @@ namespace Flix.API.Repo.Users
         List<User> GetAllUsers();
         User GetUserByID(int Id);
         User AddUser(User user);
-        void DeleteUser(int Id);
+        User DeleteUser(int Id);
         User UpdateUser(User user);
     }
 }

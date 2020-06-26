@@ -181,6 +181,7 @@
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/User/Welcome.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.RazorTargetAssemblyInfo.cache
@@ -193,4 +194,3 @@
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.pdb
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.genruntimeconfig.cache
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.csprojAssemblyReference.cache
-/Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/User/Welcome.cshtml.g.cs

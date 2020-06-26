@@ -52,5 +52,11 @@ namespace Flix.API.Controllers
         {
             return View();
         }
+
+        public IActionResult Playlist()
+        {
+            ViewBag.Username = HttpContext.Session.GetString("username");
+            return View("../User/Playlists");
+        }
     }
 }
