@@ -41,6 +41,9 @@ namespace Flix.API.Controllers
         public IActionResult UserIndex()
         {
             ViewBag.Username = HttpContext.Session.GetString("username");
+            var moviedb = new TheMoviedbController();
+            var movielist = moviedb.GetListOfPopularMovies();
+            ViewBag.movieList = movielist;
             return View("../User/Welcome");
         }
 

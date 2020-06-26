@@ -14,14 +14,21 @@ namespace Flix.API.Controllers
     public class TheMoviedbController : Controller
     {
         [HttpGet]
-        public ActionResult<List<Search>> GetListOfPopularMovies()
+        public IEnumerable<Result> GetListOfPopularMovies()
         {
             var popular  = new TheMoviedb();
 
             var items = popular.GetPopularity();
-            var listofMovies =  item
+            var listofMovies = items.results;
 
-            return items.results;
+            var listOfMTString = new List<Result>();
+
+            foreach (var movie in listofMovies)
+            {
+                listOfMTString.Add(movie);
+            }
+
+            return listOfMTString;
         }
     }
 }

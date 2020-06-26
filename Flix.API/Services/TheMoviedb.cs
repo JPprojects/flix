@@ -15,7 +15,7 @@ namespace Flix.API.Services
     // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
     public class TheMoviedb 
     {
-        public List<Search> GetPopularity()
+        public Search GetPopularity()
         {
             string JSon = null;
             string apiKey = "?api_key=4311ad461d9e5136c6bd9a5044968836";
@@ -33,7 +33,7 @@ namespace Flix.API.Services
                 sr.Close();
             }
 
-             var items = JsonConvert.DeserializeObject<List<Search>>(JSon);
+             var items = JsonConvert.DeserializeObject<Search>(JSon);
 
   
 
