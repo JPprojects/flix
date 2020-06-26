@@ -14,13 +14,11 @@ namespace Flix.API.Controllers
     {
         private IPlaylistRepository _playlistRepo;
 
-        private readonly FlixContext _context;
 
-        public PostController(IPlaylistRepository playlist, FlixContext context)
+        public PostController(IPlaylistRepository playlist)
         {
 
             _playlistRepo = playlist;
-            _context = context;
         }
 
         [HttpGet]
