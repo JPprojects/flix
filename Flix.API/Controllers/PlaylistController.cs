@@ -55,8 +55,8 @@ namespace Flix.API.Controllers
             return RedirectToAction("Playlist", "Home");
         }
 
-        [HttpDelete(Name = "Delete")]
-        [Route("/Playlist/Delete")]
+        [HttpPost(Name = "Delete")]
+        [Route("/Playlist/Delete/{id}")]
         public IActionResult Delete(int id )
         {
             _playlistRepo.DeletePlayListById(id);

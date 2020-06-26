@@ -27,11 +27,12 @@
             </li>
             @foreach (var playlist in @ViewBag.Posts)
             {
-                <li>
-                    <div class="card">
-                        <h2>@playlist.Title</h2>
-                    </div>
-                </li>
+                  <li>
+                        <form class="card" asp-controller="Playlist" asp-action="Delete" asp-route-id="@playlist.Id" method="post">
+                            <h2>@playlist.Title</h2>
+                            <input type="submit" value="Delete" class="button" />
+                        </form>
+                 </li>
             }
         </ul>
     </div>
