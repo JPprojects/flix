@@ -10,102 +10,45 @@ namespace Flix.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class UserController : Controller
+    public class WatchlistController : Controller
     {
-        private IUserReposistory _userRepo;
+        private IWatchlistRepository _watchlistRepository;
+        private IPlaylistRepository _playlistRepo;
 
-        private readonly FlixContext _context;
-
-        public UserController(IUserReposistory user, FlixContext context)
+        public WatchlistController(IWatchlistRepository watchlistRepository,  IPlaylistRepository playlistRepo)
         {
-
-            _userRepo = user;
-            _context = context;
+            _watchlistRepository = watchlistRepository;
+            _playlistRepo = playlistRepo;
         }
 
-        [HttpGet]
-        public ActionResult<List<User>> GetAll()
-        {
 
-            return this._userRepo.GetAllUsers();
-        }
-
-        [HttpGet("{id}", Name = "GetUser")]
-        public ActionResult<User> GetById(int id)
+        [HttpGet(Name = "GetWatchlistByPlaylistId")]
+        public ActionResult<IList<Watchlist>> GetWatchlistByPlaylistId(int playlistId)
         {
-            var item = _userRepo.GetUserByID(id);
+            var item = _watchlistRepository.GetMoviesByPlaylistId(playlistId).OrderByDescending(i => i.Id);
             if (item == null)
             {
                 return NotFound();
             }
-            return item;
+            return RedirectToAction("Index", "Playlist");
         }
-        
-        [HttpPost(Name = "SignUp")]
-        [Route("/User/SignUp")]
-        public ActionResult SignUp()
+
+        [HttpPost]
+        public IActionResult Create(string movieTitle, int playlistId)
         {
-            var user = new User()
-            {
-                UserName = Request.Form["username"],
-                Password = Request.Form["password"],
-                FirstName = Request.Form["firstName"],
-                LastName = Request.Form["lastName"],
-                EmailAddress = Request.Form["emailAddress"]
-            };
-
-            var result = _context.Users.FirstOrDefault(c => c.UserName == user.UserName);
-
-            if (result != null)
-            {
-                return RedirectToAction("SignUp", "Home");
-            }
-            else
-            {
-                var encrpyt = new EncrytpionRepository(user.Password).ReturnEncrpyt();
-                user.Password = encrpyt;
-                _userRepo.AddUser(user);
-                return RedirectToAction("LogIn", "Home");
-
-            }
-
+            _watchlistRepository.AddMovie(movieTitle, playlistId);
+            return RedirectToAction("Index", "Playlist");
         }
 
-        [HttpPost(Name = "Login")]
-        [Route("/User/Login")]
-        public IActionResult Login()
+
+        [HttpDelete]
+        public IActionResult Delet(int id)
         {
-            string username = Request.Form["username"];
-            string password = Request.Form["password"];
-
-
-            var user = _context.Users.FirstOrDefault(i => i.UserName == username);
-
-
-
-            if (user != null)
-            {
-                var db_password = user.Password;
-                var doesItMatch = new AuthoRepository();
-                var result = doesItMatch.SignInValidation(db_password, password);
-
-
-                if (result == true)
-                {
-                    HttpContext.Session.SetString("username", user.UserName);
-                    HttpContext.Session.SetInt32("UserId", user.Id);
-                    return RedirectToAction("UserIndex", "Home");
-                }
-                else
-                {
-                    return RedirectToAction("Log_in", "Home");
-                };
-            }
-            else
-            {
-                return RedirectToAction("Log_in", "Home");
-            }
-
+            _watchlistRepository.DeleteMovieFromPlaylist(id);
+            return RedirectToAction("Index", "Playlist");
         }
+
+
+
     }
 }
