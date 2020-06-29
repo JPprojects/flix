@@ -59,7 +59,14 @@ namespace Flix.API.Controllers
 
         public IActionResult Playlist()
         {
-            return RedirectToAction("List", "Playlist"); ;
+            return RedirectToAction("List", "Playlist"); 
+        }
+
+        [Route("/Home/SelectPlaylist/{original_title}/{poster_path}")]
+        public IActionResult SelectPlaylist(string original_title, string poster_path)
+        {
+            ViewBag.title = original_title;
+            return View("../User/SelectPlaylist");
         }
     }
 }

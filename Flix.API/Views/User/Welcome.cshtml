@@ -18,9 +18,10 @@
         <ul class="movies--row pt-40">
             @foreach(var movie in ViewBag.movieList)
             {
-                <li>
-                    <img src="https://image.tmdb.org/t/p/w154/@movie.poster_path" />
-                </li>
+            <li>
+                <img src="https://image.tmdb.org/t/p/w154/@movie.poster_path" />
+                <a class="button" href="SelectPlaylist/@movie.original_title/@movie.poster_path"></a>
+            </li>
             }
         </ul>
     </div>

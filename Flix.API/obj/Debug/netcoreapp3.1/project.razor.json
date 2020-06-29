@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Flix.API.csproj",
+  "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Flix.API.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,58 +20521,63 @@
   "RootNamespace": "Flix.API",
   "Documents": [
     {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/_ViewImports.cshtml",
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/Home/Index.cshtml",
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/Home/LogIn.cshtml",
-      "TargetPath": "Views\\Home\\LogIn.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/User/Welcome.cshtml",
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/User/Welcome.cshtml",
       "TargetPath": "Views\\User\\Welcome.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/Home/SignUp.cshtml",
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/User/SelectPlaylist.cshtml",
+      "TargetPath": "Views\\User\\SelectPlaylist.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/Home/SignUp.cshtml",
       "TargetPath": "Views\\Home\\SignUp.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/User/Playlists.cshtml",
-      "TargetPath": "Views\\User\\Playlists.cshtml",
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/Home/LogIn.cshtml",
+      "TargetPath": "Views\\Home\\LogIn.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/Home/Privacy.cshtml",
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/Shared/_Layout.cshtml",
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/User/Playlists.cshtml",
+      "TargetPath": "Views\\User\\Playlists.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "/Users/student/Desktop/projects/flix/Flix.API/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     }
   ],
