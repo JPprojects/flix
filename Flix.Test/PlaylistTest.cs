@@ -129,7 +129,7 @@ namespace Flix.Api.UnitTest
                 PlaylistRepository userRepo = new PlaylistRepository(context);
                 var playlist = userRepo.GetAllPlaylistByUserId(1);
 
-                Assert.AreEqual(3, playlist.Count);
+                Assert.AreEqual(2, playlist.Count);
 
                 context.Dispose();
             }
@@ -153,7 +153,7 @@ namespace Flix.Api.UnitTest
             {
                 PlaylistRepository userRepo = new PlaylistRepository(context);
                 var playlist = userRepo.EditPlayList(titleofPlaylist, id);
-                var findId = userRepo.GetPlaylistById(1);
+                var findId = userRepo.GetPlaylistById(2);
 
                 Assert.AreEqual(titleofPlaylist, findId.Title);
 
