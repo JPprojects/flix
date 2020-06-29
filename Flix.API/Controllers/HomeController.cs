@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Flix.API.Models;
 using Microsoft.AspNetCore.Http;
+using Flix.API.Services;
 
 namespace Flix.API.Controllers
 {
@@ -21,6 +22,8 @@ namespace Flix.API.Controllers
 
         public IActionResult Index()
         {
+            var api = new TheMoviedb();
+            api.GetPopularity();
             return View();
         }
 
@@ -38,6 +41,9 @@ namespace Flix.API.Controllers
         public IActionResult UserIndex()
         {
             ViewBag.Username = HttpContext.Session.GetString("username");
+            var moviedb = new TheMoviedbController();
+            var movielist = moviedb.GetListOfPopularMovies();
+            ViewBag.movieList = movielist;
             return View("../User/Welcome");
         }
 
