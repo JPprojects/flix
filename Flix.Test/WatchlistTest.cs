@@ -9,12 +9,12 @@ using Moq;
 namespace Flix.Api.UnitTest
 {
     [TestClass]
-    public class PlaylistTest
+    public class WatchlistTest
 
     {
 
         [TestMethod]
-        public void GetAllPlaylist()
+        public void GetAll()
         {
             var options = new DbContextOptionsBuilder<FlixContext>()
          .UseInMemoryDatabase(databaseName: "FlixUsersDatabase")
@@ -23,20 +23,20 @@ namespace Flix.Api.UnitTest
             // Insert seed data into the database using one instance of the context
             using (var context = new FlixContext(options))
             {
-                context.Playlists.Add(new Playlist { Id = 1, Title = "Mafia",UserId = 1 });
-                context.Playlists.Add(new Playlist { Id = 2, Title = "Comedy", UserId = 1});
-                context.Playlists.Add(new Playlist { Id = 3, Title = "Action", UserId = 1});
-                context.Playlists.Add(new Playlist { Id = 4, Title = "Action", UserId = 2 });
+                context.Watchlists.Add(new Watchlist { Id = 1, MovieTitle = "Goodfellas",PlaylistId = 1 });
+                context.Watchlists.Add(new Watchlist { Id = 2, MovieTitle = "God father", PlaylistId = 1 }); 
                 context.SaveChanges();
             }
 
             // Use a clean instance of the context to run the test
             using (var context = new FlixContext(options))
             {
-                PlaylistRepository playlistRepo = new PlaylistRepository(context);
-                var playlists = playlistRepo.GetAllPlaylists();
+                var watchlist = new WatchlistRepository(context);
+                var addMovie = watchlist.Getall();
 
-                Assert.AreEqual(4, playlists.Count);
+
+
+                Assert.AreEqual(2, addMovie.Count);
 
                 context.Dispose();
 
@@ -57,22 +57,21 @@ namespace Flix.Api.UnitTest
             // Use a clean instance of the context to run the test
             using (var context = new FlixContext(options))
             {
-                PlaylistRepository userRepo = new PlaylistRepository(context);
-                var playlist = userRepo.GetPlaylistById(1);
+                WatchlistRepository userRepo = new WatchlistRepository(context);
+                var playlist = userRepo.GetMoviesByPlaylistId(1);
 
-                Assert.AreEqual("Mafia", playlist.Title);
-                Assert.AreEqual(1, playlist.UserId);
+                Assert.AreEqual(2, playlist.Count);
                 context.Dispose();
             }
 
         }
 
         [TestMethod]
-        public void AddPlayloist()
+        public void AddPlaylist()
         {
 
-            string title = "Super Hero";
-            int userId = 2;
+            string title = "MovieName";
+            int playListId = 2;
 
 
             var options = new DbContextOptionsBuilder<FlixContext>()
@@ -82,11 +81,11 @@ namespace Flix.Api.UnitTest
             // Use a clean instance of the context to run the test
             using (var context = new FlixContext(options))
             {
-                PlaylistRepository playlist = new PlaylistRepository(context);
-                var users = playlist.AddPlaylist(title, userId );
+                WatchlistRepository playlist = new WatchlistRepository(context);
+                var users = playlist.AddMovie(title, playListId);
 
-                Assert.AreEqual(title,users.Title);
-                Assert.AreEqual(userId, users.Id);
+                Assert.AreEqual(title,users.MovieTitle);
+                Assert.AreEqual(playListId, users.Id);
 
                 context.Dispose();
 
@@ -94,28 +93,9 @@ namespace Flix.Api.UnitTest
 
         }
 
-        [TestMethod]
-        public void DeleteByPlaylistId()
-        {
-            var options = new DbContextOptionsBuilder<FlixContext>()
-         .UseInMemoryDatabase(databaseName: "FlixUsersDatabase")
-         .Options;
-
-            // Use a clean instance of the context to run the test
-            using (var context = new FlixContext(options))
-            {
-                PlaylistRepository playlistRepo = new PlaylistRepository(context);
-                var playlist = playlistRepo.DeletePlayListById(1);
-                var getAllPlaylist = playlistRepo.GetAllPlaylists();
-
-                Assert.AreEqual(4, getAllPlaylist.Count);
-
-                context.Dispose();
-            }
-        }
 
         [TestMethod]
-        public void    GetListofPlaylistbyUserId()
+        public void    DeleteMovieFromPlaylist()
         {
 
             var options = new DbContextOptionsBuilder<FlixContext>()
@@ -126,41 +106,39 @@ namespace Flix.Api.UnitTest
             // Use a clean instance of the context to run the test
             using (var context = new FlixContext(options))
             {
-                PlaylistRepository userRepo = new PlaylistRepository(context);
-                var playlist = userRepo.GetAllPlaylistByUserId(1);
+                WatchlistRepository userRepo = new WatchlistRepository(context);
+                var playlist = userRepo.DeleteMovieFromPlaylist(1);
+                var getall = userRepo.Getall();
 
-                Assert.AreEqual(3, playlist.Count);
+                Assert.AreEqual(2, getall.Count);
 
                 context.Dispose();
             }
 
         }
 
-        [TestMethod]
-        public void EditTitlePlaylist()
+        public void GetMovie()
         {
-
-            string titleofPlaylist = "Mafia Collection";
-            int id = 1;
 
             var options = new DbContextOptionsBuilder<FlixContext>()
             .UseInMemoryDatabase(databaseName: "FlixUsersDatabase")
             .Options;
 
 
+
             // Use a clean instance of the context to run the test
             using (var context = new FlixContext(options))
             {
-                PlaylistRepository userRepo = new PlaylistRepository(context);
-                var playlist = userRepo.EditPlayList(titleofPlaylist, id);
-                var findId = userRepo.GetPlaylistById(1);
+                WatchlistRepository userRepo = new WatchlistRepository(context);
+                var playlist = userRepo.GetWatchlistById(2);
 
-                Assert.AreEqual(titleofPlaylist, findId.Title);
-
+                Assert.AreEqual("God father", playlist.MovieTitle);
                 context.Dispose();
             }
 
         }
+
+
 
 
     }

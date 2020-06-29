@@ -12,5 +12,6 @@ namespace Flix.API.Repo.Users
         Watchlist AddMovie(string title, int playListId);
         Watchlist DeleteMovieFromPlaylist(int Id);
         Watchlist GetWatchlistById(int Id);
+        List<Watchlist> Getall();
     }
 }

@@ -49,5 +49,10 @@ namespace Flix.API.Repo.Users
         {
             return context.Watchlists.Find(Id);
         }
+
+        public List<Watchlist> Getall()
+        {
+            return context.Watchlists.ToList();
+        }
     }
 }
