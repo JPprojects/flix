@@ -82,6 +82,9 @@ namespace Flix.API.Migrations
                     b.Property<int>("PlaylistId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("PosterPath")
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.HasIndex("PlaylistId");
