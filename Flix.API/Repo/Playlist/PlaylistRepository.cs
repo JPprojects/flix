@@ -38,11 +38,12 @@ namespace Flix.API.Repo.Users
             return playlist;
         }
 
-        public void EditPlayList(string title, int Id)
+        public Playlist EditPlayList(string title, int Id)
         {
             var playlist = GetPlaylistById(Id);
             playlist.Title = title;
             context.SaveChanges();
+            return playlist;
         }
 
         public List<Playlist> GetAllPlaylistByUserId(int? Id)

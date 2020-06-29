@@ -12,7 +12,7 @@ namespace Flix.API.Repo.Users
         Playlist GetPlaylistById(int Id);
         Playlist AddPlaylist(string title, int UserId);
         Playlist DeletePlayListById(int Id);
-        void EditPlayList(string title, int Id);
+        Playlist EditPlayList(string title, int Id);
         List<Playlist> GetAllPlaylistByUserId(int? Id);
     }
 }

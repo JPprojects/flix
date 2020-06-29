@@ -59,7 +59,7 @@ using Flix.API.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
 #nullable restore
-#line 1 "/Users/student/Desktop/projects/flix/Flix.API/Views/Home/LogIn.cshtml"
+#line 1 "/Users/student/Documents/Week11/-flix/Flix.API/Views/Home/LogIn.cshtml"
   
     ViewData["Title"] = "Log in";
 
