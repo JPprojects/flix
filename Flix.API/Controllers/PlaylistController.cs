@@ -10,12 +10,12 @@ namespace Flix.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class PostController : Controller
+    public class PlaylistController : Controller
     {
         private IPlaylistRepository _playlistRepo;
 
 
-        public PostController(IPlaylistRepository playlist)
+        public PlaylistController(IPlaylistRepository playlist)
         {
 
             _playlistRepo = playlist;
@@ -31,15 +31,15 @@ namespace Flix.API.Controllers
         }
 
         [HttpGet(Name = "GetPlaylistByUserId")]
-        public ActionResult<IList<Playlist>> GetPlaylistByUserId()
+        public IEnumerable<Playlist> GetPlaylistByUserId()
         {
             var userid = HttpContext.Session.GetInt32("UserId");
             var item = _playlistRepo.GetAllPlaylistByUserId(userid).OrderByDescending(i => i.Id);
             if (item == null)
             {
-                return NotFound();
+                return (IEnumerable<Playlist>)StatusCode(404);
             }
-            return RedirectToAction("Index", "Playlist");
+            return item;
         }
 
 
@@ -70,7 +70,13 @@ namespace Flix.API.Controllers
             return RedirectToAction("Index", "Playlist");
         }
 
-
+        [Route("/Playlist/SelectPlaylist/{original_title}/{poster_path}")]
+        public IActionResult SelectPlaylist(string original_title, string poster_path)
+        {
+            ViewBag.playlist = GetPlaylistByUserId();
+            ViewBag.title = original_title;
+            return View("../User/SelectPlaylist");
+        }
 
 
     }
