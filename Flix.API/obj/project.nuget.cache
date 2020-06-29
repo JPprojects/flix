@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ub3MDC3ElEGX9R1IAFVObCc89/a5UoYBUq8ti8mL2RldLIg1z4hLyPH19WRrvVcNm469EvABo1Vh9hNptKxJpw==",
+  "dgSpecHash": "YrfvHCFuIC/HwaPaoAOtB/6IOm4M6dkg4fFOXFjFurxRV3ywTEieHSRYuc3XLBKXd3zRPAachgaH8BNBy0w79A==",
   "success": true,
-  "projectFilePath": "/Users/student/Documents/ProjectsC#/flix/Flix.API/Flix.API.csproj",
+  "projectFilePath": "/Users/student/Desktop/projects/flix/Flix.API/Flix.API.csproj",
   "expectedPackageFiles": [
     "/Users/student/.nuget/packages/microsoft.aspnetcore.cryptography.internal/2.2.0/microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "/Users/student/.nuget/packages/microsoft.aspnetcore.dataprotection/2.2.0/microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
@@ -41,6 +41,7 @@
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
+    "/Users/student/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/student/.nuget/packages/npgsql/4.1.3.1/npgsql.4.1.3.1.nupkg.sha512",
     "/Users/student/.nuget/packages/npgsql.entityframeworkcore.postgresql/3.1.4/npgsql.entityframeworkcore.postgresql.3.1.4.nupkg.sha512",
     "/Users/student/.nuget/packages/npgsql.entityframeworkcore.postgresql.design/1.1.0/npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512",

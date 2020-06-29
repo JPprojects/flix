@@ -13,6 +13,15 @@
         </ul>
     </div>
     <div class="main-section pt-40">
-        <h1 class="text-white">Welcome, @ViewBag.Username to #Flix</h1>
+        <h1 class="text-white">Hey @ViewBag.Username Welcome to #Flix</h1>
+
+        <ul class="movies--row pt-40">
+            @foreach(var movie in ViewBag.movieList)
+            {
+                <li>
+                    <img src="https://image.tmdb.org/t/p/w154/@movie.poster_path" />
+                </li>
+            }
+        </ul>
     </div>
 </div>
