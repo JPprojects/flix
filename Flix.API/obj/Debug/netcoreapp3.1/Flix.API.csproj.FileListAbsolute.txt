@@ -116,6 +116,7 @@
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/User/Playlists.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/User/Welcome.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
@@ -128,7 +129,14 @@
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.dll
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.pdb
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.genruntimeconfig.cache
+<<<<<<< HEAD
+=======
 /Users/student/Documents/Week11/-flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.csprojAssemblyReference.cache
+<<<<<<< HEAD
+/Users/student/Documents/ProjectsC#/flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.csprojAssemblyReference.cache
+/Users/student/Documents/ProjectsC#/flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/User/Playlists.cshtml.g.cs
+/Users/student/Documents/ProjectsC#/flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/User/Welcome.cshtml.g.cs
+=======
 /Users/student/Documents/ProjectsC#/flix/Flix.API/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/student/Documents/ProjectsC#/flix/Flix.API/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/student/Documents/ProjectsC#/flix/Flix.API/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
@@ -202,3 +210,5 @@
 /Users/student/Desktop/projects/flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/Home/LogIn.cshtml.g.cs
 /Users/student/Desktop/projects/flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/User/Playlists.cshtml.g.cs
 /Users/student/Desktop/projects/flix/Flix.API/obj/Debug/netcoreapp3.1/Razor/Views/User/Welcome.cshtml.g.cs
+>>>>>>> master
+>>>>>>> master

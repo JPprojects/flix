@@ -23,7 +23,7 @@ namespace Flix.API.Repo.Users
             var watchlist = new Watchlist()
             {
                 MovieTitle = title,
-                PlaylistId = 1
+                PlaylistId = playListId
             };
 
             context.Watchlists.Add(watchlist);
@@ -48,6 +48,11 @@ namespace Flix.API.Repo.Users
         public Watchlist GetWatchlistById(int Id)
         {
             return context.Watchlists.Find(Id);
+        }
+
+        public List<Watchlist> Getall()
+        {
+            return context.Watchlists.ToList();
         }
     }
 }
