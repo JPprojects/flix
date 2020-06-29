@@ -21,12 +21,13 @@ namespace Flix.API.Controllers
             _playlistRepo = playlist;
         }
 
-        [HttpGet]
-        public ActionResult<List<Playlist>> Index()
+        [HttpGet(Name = "List")]
+        [Route("/Playlist/List")]
+        public ActionResult<List<Playlist>>List()
         {
             ViewBag.Posts = _playlistRepo.GetAllPlaylists().OrderByDescending(i => i.Id);
-            ViewBag.User = HttpContext.Session.GetString("username");
-            return View();
+            ViewBag.Username = HttpContext.Session.GetString("username");
+            return View("../User/Playlists");
         }
 
         [HttpGet(Name = "GetPlaylistByUserId")]
@@ -42,20 +43,22 @@ namespace Flix.API.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost(Name = "Create")]
+        [Route("/Playlist/Create")]
         public IActionResult Create()
         {
             int userid = (int)HttpContext.Session.GetInt32("UserId");
             var title = Request.Form["title"];
             _playlistRepo.AddPlaylist(title, userid);
-            return RedirectToAction("Index", "Playlist");
+            return RedirectToAction("Playlist", "Home");
         }
 
-        [HttpDelete]
+        [HttpPost(Name = "Delete")]
+        [Route("/Playlist/Delete/{id}")]
         public IActionResult Delete(int id )
         {
             _playlistRepo.DeletePlayListById(id);
-            return RedirectToAction("Index", "Playlist");
+            return RedirectToAction("Playlist", "Home");
         }
 
 

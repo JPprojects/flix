@@ -116,6 +116,12 @@ a {
     justify-content: center;
 }
 
+.container--column {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 .left-panel {
     background: #BFA9A4;
     height: 100vh;
