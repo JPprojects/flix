@@ -9,6 +9,16 @@
       <File FileName="Flix.Test/PlaylistTest.cs" Line="27" Column="77" />
       <File FileName="Flix.Test/WatchlistTest.cs" Line="92" Column="14" />
       <File FileName="Flix.API/Repo/Watchlist/WatchlistRepository.cs" Line="45" Column="87" />
+  <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Views/User/Playlists.cshtml">
+    <Files>
+      <File FileName="Flix.API/Controllers/TheMoviedbController.cs" Line="32" Column="10" />
+      <File FileName="Flix.API/Controllers/HomeController.cs" Line="46" Column="1" />
+      <File FileName="Flix.API/Models/Result.cs" Line="14" Column="37" />
+      <File FileName="Flix.API/Models/Search.cs" Line="14" Column="1" />
+      <File FileName="Flix.API/Services/TheMoviedb.cs" Line="19" Column="1" />
+      <File FileName="Flix.API/Views/User/Welcome.cshtml" Line="19" Column="36" />
+      <File FileName="Flix.API/Views/User/Playlists.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,8 +31,16 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
+<<<<<<< HEAD
               <Node name="Repo" expanded="True">
                 <Node name="Watchlist" expanded="True" />
+=======
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="User" expanded="True">
+                  <Node name="Playlists.cshtml" selected="True" />
+                </Node>
+>>>>>>> master
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="User" expanded="True" />
@@ -34,18 +52,17 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Flix.API" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
+<<<<<<< HEAD
       <Breakpoint file="/Users/student/Documents/Week11/-flix/Flix.API/Controllers/HomeController.cs" relfile="Flix.API/Controllers/HomeController.cs" line="45" column="1" />
+=======
+      <Breakpoint file="/Users/student/Desktop/projects/flix/Flix.API/Controllers/HomeController.cs" relfile="Flix.API/Controllers/HomeController.cs" line="45" column="1" />
+>>>>>>> master
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
