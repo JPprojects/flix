@@ -74,7 +74,9 @@ namespace Flix.API.Controllers
         public IActionResult SelectPlaylist(string original_title, string poster_path)
         {
             ViewBag.playlist = GetPlaylistByUserId();
+            ViewBag.poster = poster_path;
             ViewBag.title = original_title;
+
             return View("../User/SelectPlaylist");
         }
 

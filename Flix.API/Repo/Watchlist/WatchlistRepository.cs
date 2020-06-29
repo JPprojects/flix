@@ -18,12 +18,14 @@ namespace Flix.API.Repo.Users
             this.context = context;
         }
 
-        public Watchlist AddMovie(string title, int playListId)
+        public Watchlist AddMovie(string title, int playListId, string posterPath)
         {
             var watchlist = new Watchlist()
             {
                 MovieTitle = title,
-                PlaylistId = playListId
+                PlaylistId = playListId,
+                PosterPath = posterPath
+                
             };
 
             context.Watchlists.Add(watchlist);

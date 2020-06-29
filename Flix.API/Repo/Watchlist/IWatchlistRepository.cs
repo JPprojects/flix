@@ -9,7 +9,7 @@ namespace Flix.API.Repo.Users
     public interface IWatchlistRepository
     {
         List<Watchlist> GetMoviesByPlaylistId(int playListId);
-        Watchlist AddMovie(string title, int playListId);
+        Watchlist AddMovie(string title, int playListId, string posterPath);
         Watchlist DeleteMovieFromPlaylist(int Id);
         Watchlist GetWatchlistById(int Id);
         List<Watchlist> Getall();
