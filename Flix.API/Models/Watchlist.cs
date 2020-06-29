@@ -15,6 +15,7 @@ namespace Flix.API.Models
         public int PlaylistId { get; set; }
 
         public virtual Playlist Playlist { get; set; }
+       public string PosterPath { get; set; }
 
     }
 }
