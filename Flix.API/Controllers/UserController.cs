@@ -98,12 +98,12 @@ namespace Flix.API.Controllers
                 }
                 else
                 {
-                    return RedirectToAction("Log_in", "Home");
+                    return RedirectToAction("Login", "Home");
                 };
             }
             else
             {
-                return RedirectToAction("Log_in", "Home");
+                return RedirectToAction("SignUp", "Home");
             }
 
         }
