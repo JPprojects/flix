@@ -23,7 +23,7 @@ namespace Flix.API.Repo.Users
             var watchlist = new Watchlist()
             {
                 MovieTitle = title,
-                PlaylistId = 1
+                PlaylistId = playListId
             };
 
             context.Watchlists.Add(watchlist);

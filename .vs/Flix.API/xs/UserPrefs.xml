@@ -1,21 +1,23 @@
 ﻿<Properties StartupConfiguration="{C48AC997-85DA-413E-BF23-729403BC00FA}|Default">
   <MonoDevelop.Ide.ItemProperties.Flix.API PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Controllers/PlaylistController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flix.API/Repo/Users/UserRepository.cs">
     <Files>
       <File FileName="Flix.API/Controllers/PlaylistController.cs" Line="53" Column="1" />
-      <File FileName="Flix.API/Repo/Watchlist/IWatchlistRepository.cs" Line="15" Column="1" />
-      <File FileName="Flix.API/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Flix.API/Repo/Watchlist/IWatchlistRepository.cs" />
+      <File FileName="Flix.API/Controllers/HomeController.cs" />
+      <File FileName="Flix.API/Repo/Users/UserRepository.cs" Line="36" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Flix.API" expanded="True">
             <Node name="Flix.API" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="PlaylistController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Repo" expanded="True">
                 <Node name="Playlist" expanded="True" />
+                <Node name="Users" expanded="True">
+                  <Node name="UserRepository.cs" selected="True" />
+                </Node>
                 <Node name="Watchlist" expanded="True" />
               </Node>
             </Node>
