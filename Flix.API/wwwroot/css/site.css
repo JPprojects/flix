@@ -124,17 +124,24 @@ a {
 
 .left-panel {
     background: #BFA9A4;
-    height: 100vh;
     flex: 1;
     padding: 20px;
 }
 
 .main-section{
     flex: 6;
+    padding: 15px;
 }
 
 
 
 .pt-40 {
     padding-top: 40px;
+}
+
+.movies--row {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
