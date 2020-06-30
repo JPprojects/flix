@@ -275,3 +275,4 @@
 /Users/student/Documents/Week11/flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.dll
 /Users/student/Documents/Week11/flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.pdb
 /Users/student/Documents/Week11/flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.genruntimeconfig.cache
+/Users/student/Documents/Week11/flix/Flix.API/obj/Debug/netcoreapp3.1/Flix.API.csprojAssemblyReference.cache

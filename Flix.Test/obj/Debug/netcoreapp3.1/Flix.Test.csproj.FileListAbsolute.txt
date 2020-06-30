@@ -395,3 +395,5 @@
 /Users/student/Documents/Week11/flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.dll
 /Users/student/Documents/Week11/flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.pdb
 /Users/student/Documents/Week11/flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.genruntimeconfig.cache
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll

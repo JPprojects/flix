@@ -16,9 +16,12 @@ namespace Flix.Api.UnitTest
 
             //Act
 
-         
+
+
 
             //Assert
+
+            Assert.IsNotNull(item);
 
       
 
