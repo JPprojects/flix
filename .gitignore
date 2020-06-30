@@ -56,3 +56,9 @@ dkms.conf
 
 #.g.cs files
 .g.cs
+
+#razor json
+.razor.json
+
+#xml files
+.xml
