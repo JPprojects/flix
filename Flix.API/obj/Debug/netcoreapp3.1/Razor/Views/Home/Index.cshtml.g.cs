@@ -75,7 +75,7 @@ using Flix.API.Models;
                 <ul class=""button-container--column"">
                     <li><p>Don't have an account</p></li>
                     <li class=""button-column"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4850429bc70e632789f5536033613140710dcc364719", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4850429bc70e632789f5536033613140710dcc364723", async() => {
                 WriteLiteral("Register");
             }
             );
@@ -94,7 +94,7 @@ using Flix.API.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n                    <li>Or</li>\r\n                    <li class=\"button-column\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4850429bc70e632789f5536033613140710dcc366234", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4850429bc70e632789f5536033613140710dcc366238", async() => {
                 WriteLiteral("Log-in");
             }
             );

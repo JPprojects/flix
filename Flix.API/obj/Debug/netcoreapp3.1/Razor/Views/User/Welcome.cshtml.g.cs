@@ -141,7 +141,7 @@ WriteAttributeValue("", 769, movie.poster_path, 769, 18, false);
 #line hidden
 #nullable disable
             EndWriteAttribute();
-            WriteLiteral(" />\n                </li>\n");
+            WriteLiteral("></a>\r\n            </li>\n");
 #nullable restore
 #line 24 "/Users/student/Documents/Week11/flix/Flix.API/Views/User/Welcome.cshtml"
             }

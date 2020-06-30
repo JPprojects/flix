@@ -89,6 +89,10 @@ a {
     margin-bottom: 10px;
 }
 
+.from-input--extended{
+    width: 97%;
+}
+
 .head{
     display: flex;
     flex-flow: row;
@@ -144,4 +148,12 @@ a {
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.center{
+    text-align: center;
+}
+
+.hidden{
+    display:none;
 }

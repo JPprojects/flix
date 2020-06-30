@@ -5,6 +5,7 @@ using Flix.API.Repo;
 using Flix.API.Repo.Users;
 using Microsoft.AspNetCore.Http;
 using Flix.API.Models;
+using System;
 
 namespace Flix.API.Controllers
 {
@@ -15,7 +16,7 @@ namespace Flix.API.Controllers
         private IWatchlistRepository _watchlistRepository;
         private IPlaylistRepository _playlistRepo;
 
-        public WatchlistController(IWatchlistRepository watchlistRepository,  IPlaylistRepository playlistRepo)
+        public WatchlistController(IWatchlistRepository watchlistRepository, IPlaylistRepository playlistRepo)
         {
             _watchlistRepository = watchlistRepository;
             _playlistRepo = playlistRepo;
@@ -33,16 +34,22 @@ namespace Flix.API.Controllers
             return RedirectToAction("Index", "Playlist");
         }
 
+
         [HttpPost]
-        public IActionResult Create(string movieTitle, int playlistId)
+        [Route("Create")]
+        public IActionResult Create()
         {
-            _watchlistRepository.AddMovie(movieTitle, playlistId);
-            return RedirectToAction("Index", "Playlist");
+            string movieTitle = Request.Form["movie_title"];
+            string posterPath = Request.Form["poster_path"];
+            var playlist = Request.Form["playlist"];
+            int playlistIdInt = Convert.ToInt32(playlist);
+            _watchlistRepository.AddMovie(movieTitle, playlistIdInt, posterPath);
+            return RedirectToAction("UserIndex", "Home");
         }
 
 
         [HttpDelete]
-        public IActionResult Delet(int id)
+        public IActionResult Delete(int id)
         {
             _watchlistRepository.DeleteMovieFromPlaylist(id);
             return RedirectToAction("Index", "Playlist");
