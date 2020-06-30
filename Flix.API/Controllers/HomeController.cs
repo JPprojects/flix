@@ -67,12 +67,8 @@ namespace Flix.API.Controllers
 
         public IActionResult Playlist()
         {
-<<<<<<< HEAD
-            return RedirectToAction("List", "Playlist"); 
-=======
 
-            return RedirectToAction("List", "Playlist"); ;
->>>>>>> master
+            return RedirectToAction("List", "Playlist");
         }
     }
 }
