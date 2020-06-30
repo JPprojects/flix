@@ -22,7 +22,8 @@ namespace Flix.API.Controllers
         }
 
 
-        [HttpGet(Name = "GetWatchlistByPlaylistId")]
+        [HttpGet]
+        [Route("/Watchlist/ViewMoviesInPlaylist/{playlistId}")]
         public ActionResult<IList<Watchlist>> GetWatchlistByPlaylistId(int playlistId)
         {
             var item = _watchlistRepository.GetMoviesByPlaylistId(playlistId).OrderByDescending(i => i.Id);
@@ -30,7 +31,8 @@ namespace Flix.API.Controllers
             {
                 return NotFound();
             }
-            return RedirectToAction("Index", "Playlist");
+            ViewBag.Playlist = item;
+            return View("../User/ViewMoviesInPlaylist");
         }
 
         [HttpPost]

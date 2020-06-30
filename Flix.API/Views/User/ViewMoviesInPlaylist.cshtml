@@ -1,0 +1,13 @@
+﻿
+
+<a class="text-white" asp-controller="playlist" asp-action="list">Return to Playlist</a>
+
+<ul>
+    @foreach (var movie in ViewBag.Playlist)
+
+    {
+        <li>
+            <img src="https://image.tmdb.org/t/p/w154/@movie.PosterPath" />
+        </li>
+    }
+</ul>
