@@ -1,22 +1,20 @@
-﻿@page
-@{
+﻿@{
+    ViewData["Title"] = "#Flix";
+
 }
 
 
-<h1>@ViewBag.title</h1>
+<div class="container--column pt-40">
 
 
-<form asp-action="Create" asp-controller="Watchlist" method="post"> 
-
-    <select name="playlist">
-        @foreach (var playlist in ViewBag.playlist)
-        {
-            <option value="@playlist.Id">@playlist.Title</option>
-        }
-    </select>
-    <input type="text" name="movie_title" value="@ViewBag.title"/>
-    <input type="text" name="poster_path" value="@ViewBag.poster" class="hidden"/>
-
-
-    <input type="submit" class="button"/>
-</form>
+    <form class="card center">
+        <h1>@ViewBag.title</h1>
+        <select name="playlist" class="form-input from-input--extended">
+            @foreach (var playlist in ViewBag.playlist)
+            {
+                <option value="@playlist.Title">@playlist.Title</option>
+            }
+        </select>
+        <input type="submit" class="button" value="Add" />
+    </form>
+</div>
