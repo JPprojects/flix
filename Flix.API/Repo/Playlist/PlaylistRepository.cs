@@ -23,7 +23,7 @@ namespace Flix.API.Repo.Users
             var playlist = new Playlist()
             {
                 Title = title,
-                UserId = 1
+                UserId = UserId
             };
             context.Playlists.Add(playlist);
             context.SaveChanges();
@@ -41,6 +41,7 @@ namespace Flix.API.Repo.Users
         public Playlist EditPlayList(string title, int Id)
         {
             var playlist = GetPlaylistById(Id);
+
             playlist.Title = title;
             context.SaveChanges();
             return playlist;
