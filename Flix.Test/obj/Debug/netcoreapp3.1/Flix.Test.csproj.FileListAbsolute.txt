@@ -151,6 +151,8 @@
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
@@ -162,6 +164,7 @@
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -174,7 +177,13 @@
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Npgsql.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/xunit.abstractions.dll
@@ -246,13 +255,6 @@
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.dll
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Npgsql.dll
 /Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Flix.API.pdb
 /Users/student/Documents/Week11/flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.csprojAssemblyReference.cache
 /Users/student/Documents/Week11/flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.AssemblyInfoInputs.cache
@@ -262,5 +264,3 @@
 /Users/student/Documents/Week11/flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.dll
 /Users/student/Documents/Week11/flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.pdb
 /Users/student/Documents/Week11/flix/Flix.Test/obj/Debug/netcoreapp3.1/Flix.Test.genruntimeconfig.cache
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll
-/Users/student/Documents/Week11/flix/Flix.Test/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll

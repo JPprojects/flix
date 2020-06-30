@@ -68,7 +68,7 @@ using Flix.API.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n\r\n    <div class=\"img-container\">\r\n        <div class=\"card\">\r\n            <h1>#Flix</h1>\r\n            <h2>Registering to #Flix has never been easier</h2>\r\n\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d337beea266ed5044213e6a7418605d5364527bf4187", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d337beea266ed5044213e6a7418605d5364527bf4183", async() => {
                 WriteLiteral("\r\n                <input type=\"text\" placeholder=\"Username\"");
                 BeginWriteAttribute("required", " required=\"", 320, "\"", 331, 0);
                 EndWriteAttribute();
