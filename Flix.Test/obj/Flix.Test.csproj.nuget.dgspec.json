@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/student/Documents/Week11/flix/Flix.Test/Flix.Test.csproj": {}
+    "/Users/student/Desktop/projects/flix/Flix.Test/Flix.Test.csproj": {}
   },
   "projects": {
-    "/Users/student/Documents/Week11/flix/Flix.API/Flix.API.csproj": {
+    "/Users/student/Desktop/projects/flix/Flix.API/Flix.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/student/Documents/Week11/flix/Flix.API/Flix.API.csproj",
+        "projectUniqueName": "/Users/student/Desktop/projects/flix/Flix.API/Flix.API.csproj",
         "projectName": "Flix.API",
-        "projectPath": "/Users/student/Documents/Week11/flix/Flix.API/Flix.API.csproj",
+        "projectPath": "/Users/student/Desktop/projects/flix/Flix.API/Flix.API.csproj",
         "packagesPath": "/Users/student/.nuget/packages/",
-        "outputPath": "/Users/student/Documents/Week11/flix/Flix.API/obj/",
+        "outputPath": "/Users/student/Desktop/projects/flix/Flix.API/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -92,14 +92,14 @@
         }
       }
     },
-    "/Users/student/Documents/Week11/flix/Flix.Test/Flix.Test.csproj": {
+    "/Users/student/Desktop/projects/flix/Flix.Test/Flix.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/student/Documents/Week11/flix/Flix.Test/Flix.Test.csproj",
+        "projectUniqueName": "/Users/student/Desktop/projects/flix/Flix.Test/Flix.Test.csproj",
         "projectName": "Flix.Test",
-        "projectPath": "/Users/student/Documents/Week11/flix/Flix.Test/Flix.Test.csproj",
+        "projectPath": "/Users/student/Desktop/projects/flix/Flix.Test/Flix.Test.csproj",
         "packagesPath": "/Users/student/.nuget/packages/",
-        "outputPath": "/Users/student/Documents/Week11/flix/Flix.Test/obj/",
+        "outputPath": "/Users/student/Desktop/projects/flix/Flix.Test/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -116,8 +116,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/student/Documents/Week11/flix/Flix.API/Flix.API.csproj": {
-                "projectPath": "/Users/student/Documents/Week11/flix/Flix.API/Flix.API.csproj"
+              "/Users/student/Desktop/projects/flix/Flix.API/Flix.API.csproj": {
+                "projectPath": "/Users/student/Desktop/projects/flix/Flix.API/Flix.API.csproj"
               }
             }
           }

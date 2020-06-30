@@ -82,7 +82,7 @@ namespace Flix.Api.UnitTest
             using (var context = new FlixContext(options))
             {
                 WatchlistRepository playlist = new WatchlistRepository(context);
-                var users = playlist.AddMovie(title, playListId);
+                var users = playlist.AddMovie(title, playListId, "hello");
                 var playlist1 = playlist.Getall();
 
                 Assert.AreEqual(3, playlist1.Count);
