@@ -107,5 +107,12 @@ namespace Flix.API.Controllers
             }
 
         }
+
+        [Route("/User/SignOut")]
+        public IActionResult SignOut()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login", "Home");
+        }
     }
 }

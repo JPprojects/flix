@@ -22,6 +22,7 @@ namespace Flix.API.Controllers
 
         public IActionResult Index()
         {
+
             var api = new TheMoviedb();
             api.GetPopularity();
             return View();
@@ -40,6 +41,13 @@ namespace Flix.API.Controllers
 
         public IActionResult UserIndex()
         {
+
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("username")))
+            {
+                Response.Redirect("LogIn");
+            }
+
+       
             ViewBag.Username = HttpContext.Session.GetString("username");
             var moviedb = new TheMoviedbController();
             var movielist = moviedb.GetListOfPopularMovies();
@@ -59,7 +67,8 @@ namespace Flix.API.Controllers
 
         public IActionResult Playlist()
         {
-            return RedirectToAction("List", "Playlist"); ;
+
+            return RedirectToAction("List", "Playlist");
         }
     }
 }

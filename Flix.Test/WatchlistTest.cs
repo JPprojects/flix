@@ -83,9 +83,9 @@ namespace Flix.Api.UnitTest
             {
                 WatchlistRepository playlist = new WatchlistRepository(context);
                 var users = playlist.AddMovie(title, playListId);
+                var playlist1 = playlist.Getall();
 
-                Assert.AreEqual(title,users.MovieTitle);
-                Assert.AreEqual(playListId, users.Id);
+                Assert.AreEqual(3, playlist1.Count);
 
                 context.Dispose();
 

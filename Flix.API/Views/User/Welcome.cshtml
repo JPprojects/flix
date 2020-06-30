@@ -9,7 +9,7 @@
         <img class="user--icon" src="/images/usericon.svg" />
         <ul>
             <li><a class="text-white" asp-controller="Home" asp-action="Playlist">Playlist</a></li>
-            <li><a class="text-white" asp-controller="Home" asp-action="LogIn">Log out</a></li>
+            <li><a class="text-white" asp-controller="User" asp-action="SignOut">Log out</a></li>
         </ul>
     </div>
     <div class="main-section pt-40">
@@ -18,9 +18,10 @@
         <ul class="movies--row pt-40">
             @foreach(var movie in ViewBag.movieList)
             {
-                <li>
-                    <img src="https://image.tmdb.org/t/p/w154/@movie.poster_path" />
-                </li>
+            <li>
+                <img src="https://image.tmdb.org/t/p/w154/@movie.poster_path" />
+                <a class="button" href="../Playlist/SelectPlaylist/@movie.original_title@movie.poster_path">Add</a>
+            </li>
             }
         </ul>
     </div>
