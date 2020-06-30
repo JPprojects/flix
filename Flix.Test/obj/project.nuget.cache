@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vzZyr9YcbrHFF7KHj4YFNLtcQdDyWXy8bee0G7kgTh80Ms/QTDBDjQr/YbhOsgRDXYHsrfRESWYKagMZvqsBTw==",
+  "dgSpecHash": "lU9LVE0VF+JPanjae5GogZqgnzYjDdMdQSExULV+ADTVEER9AnIy+dz37M9ZlRxC6rDr24gO3sv54/oUUllMWw==",
   "success": true,
-  "projectFilePath": "/Users/student/Documents/Week11/-flix/Flix.Test/Flix.Test.csproj",
+  "projectFilePath": "/Users/student/Documents/Week11/flix/Flix.Test/Flix.Test.csproj",
   "expectedPackageFiles": [
     "/Users/student/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
     "/Users/student/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",

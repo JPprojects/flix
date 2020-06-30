@@ -68,7 +68,7 @@ namespace Flix.Api.UnitTest
         }
 
         [TestMethod]
-        public void AddPlayloist()
+        public void AddPlaylist()
         {
 
             string title = "Super Hero";
@@ -85,8 +85,8 @@ namespace Flix.Api.UnitTest
                 PlaylistRepository playlist = new PlaylistRepository(context);
                 var users = playlist.AddPlaylist(title, userId );
 
-                Assert.AreEqual(title,users.Title);
-                Assert.AreEqual(userId, users.Id);
+                Assert.AreEqual(title, users.Title);
+                Assert.AreEqual(userId, users.UserId);
 
                 context.Dispose();
 
@@ -141,7 +141,7 @@ namespace Flix.Api.UnitTest
         {
 
             string titleofPlaylist = "Mafia Collection";
-            int id = 1;
+            int id = 4;
 
             var options = new DbContextOptionsBuilder<FlixContext>()
             .UseInMemoryDatabase(databaseName: "FlixUsersDatabase")
@@ -153,7 +153,7 @@ namespace Flix.Api.UnitTest
             {
                 PlaylistRepository userRepo = new PlaylistRepository(context);
                 var playlist = userRepo.EditPlayList(titleofPlaylist, id);
-                var findId = userRepo.GetPlaylistById(2);
+                var findId = userRepo.GetPlaylistById(4);
 
                 Assert.AreEqual(titleofPlaylist, findId.Title);
 

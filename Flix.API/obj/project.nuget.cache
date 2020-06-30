@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mcF/ipawjmdhya9ZcAMO4+zylOxsZSiOpMe4D7/nQjuEkA0q5OwkNX7jEf1yElzziwq/kDFTiQZWN7W4xZQCJg==",
+  "dgSpecHash": "Gcz+LcFKfHlQBYkBC/uzdtXmd/s96Ca0NlhwBnXOBw5FyXcv0ync+jA0BUWUSGfqmOJpdAeWeqOE5b7tXGDFVg==",
   "success": true,
-  "projectFilePath": "/Users/student/Documents/Week11/-flix/Flix.API/Flix.API.csproj",
+  "projectFilePath": "/Users/student/Documents/Week11/flix/Flix.API/Flix.API.csproj",
   "expectedPackageFiles": [
     "/Users/student/.nuget/packages/microsoft.aspnetcore.cryptography.internal/2.2.0/microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "/Users/student/.nuget/packages/microsoft.aspnetcore.dataprotection/2.2.0/microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

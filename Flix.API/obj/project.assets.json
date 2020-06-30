@@ -6204,11 +6204,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/student/Documents/Week11/-flix/Flix.API/Flix.API.csproj",
+      "projectUniqueName": "/Users/student/Documents/Week11/flix/Flix.API/Flix.API.csproj",
       "projectName": "Flix.API",
-      "projectPath": "/Users/student/Documents/Week11/-flix/Flix.API/Flix.API.csproj",
+      "projectPath": "/Users/student/Documents/Week11/flix/Flix.API/Flix.API.csproj",
       "packagesPath": "/Users/student/.nuget/packages/",
-      "outputPath": "/Users/student/Documents/Week11/-flix/Flix.API/obj/",
+      "outputPath": "/Users/student/Documents/Week11/flix/Flix.API/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

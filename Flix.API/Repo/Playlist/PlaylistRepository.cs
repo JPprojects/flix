@@ -41,6 +41,7 @@ namespace Flix.API.Repo.Users
         public Playlist EditPlayList(string title, int Id)
         {
             var playlist = GetPlaylistById(Id);
+
             playlist.Title = title;
             context.SaveChanges();
             return playlist;
