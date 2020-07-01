@@ -25,7 +25,7 @@ namespace Flix.API.Controllers
         [Route("/Playlist/List")]
         public ActionResult<List<Playlist>>List()
         {
-            ViewBag.Posts = _playlistRepo.GetAllPlaylists().OrderByDescending(i => i.Id);
+            ViewBag.Posts = GetPlaylistByUserId();
             ViewBag.Username = HttpContext.Session.GetString("username");
             return View("../User/Playlists");
         }
