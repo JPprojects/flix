@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "#Flix";
+}
+
+<div class="container">
+    <div class="left-panel pt-40">
+        <h1 class="text-white">@ViewBag.Username</h1>
+        <img class="user--icon" src="/images/usericon.svg" />
+        <ul>
+            <li><a class="text-white" asp-controller="Home" asp-action="Playlist">Playlist</a></li>
+            <li><a class="text-white" asp-controller="User" asp-action="SignOut">Log out</a></li>
+        </ul>
+    </div>
+    <div class="main-section pt-40">
+        <h1 class="text-white">Hey @ViewBag.Username Welcome to #Flix</h1>
+
+        <ul class="movies--row pt-40">
+            @foreach (var movie in ViewBag.movieList)
+            {
+                <li>
+                    <img src="https://image.tmdb.org/t/p/w154/@movie.PosterPath" />
+                    <a class="button" href="/Watchlist/Delete/@movie.Id">Delete</a>
+                    
+                </li>
+            }
+        </ul>
+    </div>
+</div>
