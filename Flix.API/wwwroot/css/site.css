@@ -3,6 +3,7 @@
     min-height: 100vh;
     text-align: center;
     background: #402A2E;
+    height: 100vh;
 }
 
 main {
@@ -130,17 +131,24 @@ a {
     background: #BFA9A4;
     flex: 1;
     padding: 20px;
+    height: 100vh;
 }
 
-.main-section{
+.main-section {
     flex: 6;
     padding: 15px;
+    height: 100vh;
+    overflow: scroll;
 }
 
 
 
 .pt-40 {
     padding-top: 40px;
+}
+
+.mt-20{
+    margin-top:20px;
 }
 
 .movies--row {

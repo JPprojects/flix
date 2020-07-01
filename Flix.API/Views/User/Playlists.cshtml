@@ -13,7 +13,7 @@
         </ul>
     </div>
     <div class="main-section pt-40">
-        <h1 class="text-white">Here are yout playlists @ViewBag.Username</h1>
+        <h1 class="text-white">Here are your playlists @ViewBag.Username</h1>
 
         <ul class="container--column">
             <li>
@@ -28,10 +28,11 @@
             @foreach (var playlist in @ViewBag.Posts)
             {
                   <li>
-                        <form class="card" asp-controller="Playlist" asp-action="Delete" asp-route-id="@playlist.Id" method="post">
-                            <h2>@playlist.Title</h2>
-                            <input type="submit" value="Delete" class="button" />
-                        </form>
+                      <form class="card" asp-controller="Playlist" asp-action="Delete" asp-route-id="@playlist.Id" method="post">
+                          <h2>@playlist.Title</h2>
+                          <a class="button" href="../Watchlist/GetWatchlistByPlaylistId/@playlist.Id">View</a>
+                          <input type="submit" value="Delete" class="button mt-20" />
+                      </form>
                  </li>
             }
         </ul>

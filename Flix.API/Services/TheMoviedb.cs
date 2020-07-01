@@ -20,7 +20,7 @@ namespace Flix.API.Services
             string JSon = null;
             string apiKey = "?api_key=4311ad461d9e5136c6bd9a5044968836";
             string apiUrl = "https://api.themoviedb.org/3/discover/movie";
-            string popularity = "&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
+            string popularity = "&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1"; //to update this for page views update number for int
             string apiString =  apiUrl + apiKey + popularity;
             WebRequest requestObject = WebRequest.Create(apiString);
             requestObject.Method = "GET";

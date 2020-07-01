@@ -23,15 +23,20 @@ namespace Flix.API.Controllers
         }
 
 
-        [HttpGet(Name = "GetWatchlistByPlaylistId")]
+        [HttpGet]
+        [Route("/Watchlist/GetWatchlistByPlaylistId/{playlistId}")]
         public ActionResult<IList<Watchlist>> GetWatchlistByPlaylistId(int playlistId)
         {
+            HttpContext.Session.SetInt32("playlistId", playlistId);
             var item = _watchlistRepository.GetMoviesByPlaylistId(playlistId).OrderByDescending(i => i.Id);
             if (item == null)
             {
                 return NotFound();
             }
-            return RedirectToAction("Index", "Playlist");
+
+            ViewBag.movieList = item;
+
+            return View("../User/MoviesInsidePlaylist");
         }
 
 
@@ -48,11 +53,13 @@ namespace Flix.API.Controllers
         }
 
 
-        [HttpDelete]
-        public IActionResult Delete(int id)
+        
+        [Route("/Watchlist/Delete/{id}")]
+        public ActionResult<int> Delete(int id)
         {
+            var playlistId = HttpContext.Session.GetInt32("playlistId");
             _watchlistRepository.DeleteMovieFromPlaylist(id);
-            return RedirectToAction("Index", "Playlist");
+            return RedirectToAction("GetWatchlistByPlaylistId", new {playlistId});
         }
 
 
