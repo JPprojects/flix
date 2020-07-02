@@ -1,3 +1,5 @@
+using Flix.API.Models;
+using Flix.API.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Flix.Api.UnitTest
@@ -12,23 +14,18 @@ namespace Flix.Api.UnitTest
         {
 
             //Arrange
-            var item = new TheMovieDBTest();
+            var item = new TheMoviedb();
 
             //Act
-
-
-
+            var result = item.GetPopularity();
 
             //Assert
 
-            Assert.IsNotNull(item);
-
-      
-
-
+            Assert.IsInstanceOfType(result, typeof(Search));
             
         }
 
+      
     }
 
 }
